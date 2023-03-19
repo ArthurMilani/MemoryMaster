@@ -1,0 +1,65 @@
+vsim -gui work.circuito_jogo_tb_acerto
+# vsim -gui work.circuito_jogo_tb_acerto 
+# Start time: 10:47:31 on Mar 13,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.circuito_jogo_tb_acerto(tb)
+# Loading work.genius(estrutural)
+# Loading work.hexa7seg(comportamental)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.fluxo_dados(estrutural)
+# Loading work.contador_163(comportamental)
+# Loading work.comparador_85(dataflow)
+# Loading work.registrador_n(comportamental)
+# Loading work.ram_16x4(ram_modelsim)
+# Loading work.edge_detector(rtl)
+# Loading work.contador_m(comportamental)
+# Loading work.unidade_controle(fsm)
+# ** Warning: (vsim-8683) Uninitialized out port /circuito_jogo_tb_acerto/dut/unityControl/escreve has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint  \
+sim:/circuito_jogo_tb_acerto/acertou_out \
+sim:/circuito_jogo_tb_acerto/chaves_in \
+sim:/circuito_jogo_tb_acerto/clk_in \
+sim:/circuito_jogo_tb_acerto/errou_out \
+sim:/circuito_jogo_tb_acerto/igual_out \
+sim:/circuito_jogo_tb_acerto/iniciar_in \
+sim:/circuito_jogo_tb_acerto/jogada_out \
+sim:/circuito_jogo_tb_acerto/leds_out \
+sim:/circuito_jogo_tb_acerto/rst_in
+add wave -position insertpoint  \
+sim:/circuito_jogo_tb_acerto/dut/dataFlux/mostraJogada \
+sim:/circuito_jogo_tb_acerto/dut/dataFlux/s_fimRodada \
+sim:/circuito_jogo_tb_acerto/dut/dataFlux/s_meioDaJogada
+run -all
+# ** Note: inicio da simulacao
+#    Time: 0 ps  Iteration: 0  Instance: /circuito_jogo_tb_acerto
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /circuito_jogo_tb_acerto/dut/dataFlux/memoria
+# ** Note: fim da simulacao
+#    Time: 140193 ms  Iteration: 0  Instance: /circuito_jogo_tb_acerto
+add wave -position insertpoint  \
+sim:/circuito_jogo_tb_acerto/dut/unityControl/Eatual
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /circuito_jogo_tb_acerto/dut/unityControl/escreve has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Note: inicio da simulacao
+#    Time: 0 ps  Iteration: 0  Instance: /circuito_jogo_tb_acerto
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /circuito_jogo_tb_acerto/dut/dataFlux/memoria
+# ** Note: fim da simulacao
+#    Time: 140193 ms  Iteration: 0  Instance: /circuito_jogo_tb_acerto
+add wave -position insertpoint  \
+sim:/circuito_jogo_tb_acerto/acertou_out \
+sim:/circuito_jogo_tb_acerto/chaves_in \
+sim:/circuito_jogo_tb_acerto/clk_in \
+sim:/circuito_jogo_tb_acerto/errou_out \
+sim:/circuito_jogo_tb_acerto/iniciar_in \
+sim:/circuito_jogo_tb_acerto/leds_out \
+sim:/circuito_jogo_tb_acerto/pronto_out \
+sim:/circuito_jogo_tb_acerto/rst_in

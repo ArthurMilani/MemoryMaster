@@ -1,0 +1,495 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/LabDigi/Quartus
+Ecircuito_jogo_tb_acerto
+Z0 w1678713781
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 293
+Z3 dC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi
+Z4 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/circuito_jogo_tb_acerto.vhdl
+Z5 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/circuito_jogo_tb_acerto.vhdl
+l0
+L23 1
+Vj`D7UGc_i^dfLfYN`nb1a1
+!s100 BjcX:]cJFC2bnWzUj9]?@3
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1678715068
+!i10b 1
+Z8 !s108 1678715068.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/circuito_jogo_tb_acerto.vhdl|
+Z10 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/circuito_jogo_tb_acerto.vhdl|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Atb
+R1
+R2
+DEx4 work 23 circuito_jogo_tb_acerto 0 22 j`D7UGc_i^dfLfYN`nb1a1
+!i122 293
+l78
+L26 1126
+V@KLD]@IK=c1oXRXk1eJ_V3
+!s100 ?omm;XdI3cSzTGI03o>dW3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecomparador_85
+R0
+R1
+R2
+!i122 294
+R3
+Z13 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/comparador_85.vhdl
+Z14 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/comparador_85.vhdl
+l0
+L18 1
+VnRX1cKGSWahUOZjWkD0Vo3
+!s100 UchionOWWKZd[S9Df?mH>0
+R6
+32
+R7
+!i10b 1
+R8
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/comparador_85.vhdl|
+Z16 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/comparador_85.vhdl|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 13 comparador_85 0 22 nRX1cKGSWahUOZjWkD0Vo3
+!i122 294
+l41
+L37 20
+V1]eQ[UffKzW]]?63mLgma0
+!s100 P^;hPi]5OVVdjL6GdC0U80
+R6
+32
+R7
+!i10b 1
+R8
+R15
+R16
+!i113 1
+R11
+R12
+Econtador_163
+R0
+Z17 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 295
+R3
+Z18 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_163.vhdl
+Z19 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_163.vhdl
+l0
+Z20 L19 1
+VWj>hDW5JaQnFBm8n4zHQK1
+!s100 HncTPI9f>PSaSM@8d2b100
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_163.vhdl|
+Z22 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_163.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R17
+R1
+R2
+DEx4 work 12 contador_163 0 22 Wj>hDW5JaQnFBm8n4zHQK1
+!i122 295
+l34
+L32 29
+Vb^X@5ndgX5UJ@jUXZMM1M1
+!s100 :UBU?:`V1RR45eY[;lMH80
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Econtador_m
+Z23 w1678714859
+Z24 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R17
+R1
+R2
+!i122 296
+R3
+Z25 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_m.vhdl
+Z26 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_m.vhdl
+l0
+Z27 L33 1
+VANNXIA=RIQ<Q7Vodg8I4[3
+!s100 O9oUMBV6aEHd<PJmNY6Hb0
+R6
+32
+Z28 !s110 1678715069
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_m.vhdl|
+Z30 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/contador_m.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R17
+R1
+R2
+DEx4 work 10 contador_m 0 22 ANNXIA=RIQ<Q7Vodg8I4[3
+!i122 296
+l50
+L48 30
+V88`SO<TkLIhJ]kcNIj4FZ2
+!s100 CZ3=HML=Oc`R5F34:ARK50
+R6
+32
+R28
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R11
+R12
+Eedge_detector
+R0
+R1
+R2
+!i122 297
+R3
+Z31 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/edge_detector.vhdl
+Z32 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/edge_detector.vhdl
+l0
+L25 1
+V5C=KRLAGRaYL1?AQ;E;9j1
+!s100 8YZ2^jBlaX4?0]W6fg5fQ2
+R6
+32
+R28
+!i10b 1
+Z33 !s108 1678715069.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/edge_detector.vhdl|
+Z35 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/edge_detector.vhdl|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 13 edge_detector 0 22 5C=KRLAGRaYL1?AQ;E;9j1
+!i122 297
+l39
+L34 21
+V[;JQ17iE0iTkHY<AjIT;13
+!s100 XhDFK>6^Pg;Cf>3KW;kN03
+R6
+32
+R28
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R11
+R12
+Efluxo_dados
+Z36 w1678714053
+R24
+R17
+R1
+R2
+!i122 298
+R3
+Z37 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/fluxo_dados.vhdl
+Z38 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/fluxo_dados.vhdl
+l0
+R27
+V;35I^gjIYYe@R0d9MhlB=0
+!s100 VY75m?Gcm4XW1aoGKC>>T3
+R6
+32
+R28
+!i10b 1
+R33
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/fluxo_dados.vhdl|
+Z40 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/fluxo_dados.vhdl|
+!i113 1
+R11
+R12
+Aestrutural
+Z41 DEx4 work 8 ram_16x4 0 22 g`PTnemeRgQL_3ISd6Mch0
+R24
+R17
+R1
+R2
+DEx4 work 11 fluxo_dados 0 22 ;35I^gjIYYe@R0d9MhlB=0
+!i122 298
+l168
+L72 245
+VB]2HlaFAaCjkKK_nd<28X1
+!s100 3=iP@<M=7nz1^IC`AdRRg2
+R6
+32
+R28
+!i10b 1
+R33
+R39
+R40
+!i113 1
+R11
+R12
+Egenius
+R0
+R1
+R2
+!i122 299
+R3
+Z42 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/genius.vhdl
+Z43 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/genius.vhdl
+l0
+R20
+VJ85_8YA=_PF3jZG[X^6k@1
+!s100 U?S@2Tn@iQUXHC3b0k7jc1
+R6
+32
+R28
+!i10b 1
+R33
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/genius.vhdl|
+Z45 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/genius.vhdl|
+!i113 1
+R11
+R12
+Aestrutural
+R1
+R2
+DEx4 work 6 genius 0 22 J85_8YA=_PF3jZG[X^6k@1
+!i122 299
+l162
+L44 236
+VO?hWH0k8VUPd>fJ<LQIZh1
+!s100 ZFOOH9z0N@>aP>_U21UXn0
+R6
+32
+R28
+!i10b 1
+R33
+R44
+R45
+!i113 1
+R11
+R12
+Ehexa7seg
+R0
+R1
+R2
+!i122 300
+R3
+Z46 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/hexa7seg.vhdl
+Z47 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/hexa7seg.vhdl
+l0
+L24 1
+VNzLIg6K]CUPT@eNgm@^Y33
+!s100 m70:2LbOnf0ODWJKbc?@F3
+R6
+32
+R28
+!i10b 1
+R33
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/hexa7seg.vhdl|
+Z49 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/hexa7seg.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R1
+R2
+DEx4 work 8 hexa7seg 0 22 NzLIg6K]CUPT@eNgm@^Y33
+!i122 300
+l32
+L31 22
+V=D7[V5QbM@nI0L<=AT5On1
+!s100 U7QTX5YA5zSmB21GTflT=3
+R6
+32
+R28
+!i10b 1
+R33
+R48
+R49
+!i113 1
+R11
+R12
+Eram_16x4
+R0
+R17
+R1
+R2
+!i122 301
+R3
+Z50 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/ram_16x4.vhdl
+Z51 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/ram_16x4.vhdl
+l0
+L28 1
+Vg`PTnemeRgQL_3ISd6Mch0
+!s100 7_Oke2`[UPj15mR6JKQR]2
+R6
+32
+R28
+!i10b 1
+R33
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/ram_16x4.vhdl|
+Z53 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/ram_16x4.vhdl|
+!i113 1
+R11
+R12
+Aram_modelsim
+R17
+R1
+R2
+R41
+!i122 301
+l90
+L70 40
+VW<X<c?LzFVB3KHZa6`TZ33
+!s100 @Wb^3GhPLl>oU<nW@hX`C0
+R6
+32
+R28
+!i10b 1
+R33
+R52
+R53
+!i113 1
+R11
+R12
+Aram_mif
+R17
+R1
+R2
+R41
+!i122 301
+l48
+L40 28
+VL@:WRViVbhzaNJhb?YVj_0
+!s100 li^dkRXUzaR[dDlo<aFOa3
+R6
+32
+R28
+!i10b 1
+R33
+R52
+R53
+!i113 1
+R11
+R12
+Eregistrador_n
+R0
+R1
+R2
+!i122 302
+R3
+Z54 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/registrador_n.vhdl
+Z55 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/registrador_n.vhdl
+l0
+L36 1
+VHlbKf2VcahFg_gWc@:B[V0
+!s100 3bzKIeXZ[JC5lI:U7Z[362
+R6
+32
+Z56 !s110 1678715070
+!i10b 1
+R33
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/registrador_n.vhdl|
+Z58 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/registrador_n.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R1
+R2
+DEx4 work 13 registrador_n 0 22 HlbKf2VcahFg_gWc@:B[V0
+!i122 302
+l51
+L49 16
+VCGVk>k6hO1hRHPj58^@:e1
+!s100 NJEJoUNzGSKQfC6FYC6Cz3
+R6
+32
+R56
+!i10b 1
+R33
+R57
+R58
+!i113 1
+R11
+R12
+Eunidade_controle
+R0
+R1
+R2
+!i122 303
+R3
+Z59 8C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/unidade_controle.vhdl
+Z60 FC:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/unidade_controle.vhdl
+l0
+L22 1
+V]MSnidh[_g_`4X@UAGlA[1
+!s100 Y4jKo61<KZECTo1QS=9WI3
+R6
+32
+R56
+!i10b 1
+Z61 !s108 1678715070.000000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/unidade_controle.vhdl|
+Z63 !s107 C:/Users/Operador/Desktop/Semana 1 em Sala/Semana 01 - LabDigi/unidade_controle.vhdl|
+!i113 1
+R11
+R12
+Afsm
+R1
+R2
+Z64 DEx4 work 16 unidade_controle 0 22 ]MSnidh[_g_`4X@UAGlA[1
+!i122 303
+l73
+Z65 L62 154
+Z66 VGSLC[X58C7<B@0@6DN:7G0
+Z67 !s100 FhHFXDFMSjIgkNGj4>zmL3
+R6
+32
+R56
+!i10b 1
+R61
+R62
+R63
+!i113 1
+R11
+R12
