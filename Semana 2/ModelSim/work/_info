@@ -1,0 +1,454 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Ecomparador_85
+Z0 w1675483592
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 63
+Z3 dC:/Users/user/Desktop/Semana 2
+Z4 8C:/Users/user/Desktop/Semana 2/comparador_85.vhdl
+Z5 FC:/Users/user/Desktop/Semana 2/comparador_85.vhdl
+l0
+L18 1
+VnRX1cKGSWahUOZjWkD0Vo3
+!s100 UchionOWWKZd[S9Df?mH>0
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1679195561
+!i10b 1
+Z8 !s108 1679195561.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/comparador_85.vhdl|
+Z10 !s107 C:/Users/user/Desktop/Semana 2/comparador_85.vhdl|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Adataflow
+R1
+R2
+Z13 DEx4 work 13 comparador_85 0 22 nRX1cKGSWahUOZjWkD0Vo3
+!i122 63
+l41
+Z14 L37 20
+Z15 V1]eQ[UffKzW]]?63mLgma0
+Z16 !s100 P^;hPi]5OVVdjL6GdC0U80
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Econtador_163
+Z17 w1675483594
+Z18 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 47
+R3
+Z19 8C:/Users/user/Desktop/Semana 2/contador_163.vhdl
+Z20 FC:/Users/user/Desktop/Semana 2/contador_163.vhdl
+l0
+Z21 L19 1
+VWj>hDW5JaQnFBm8n4zHQK1
+!s100 HncTPI9f>PSaSM@8d2b100
+R6
+32
+Z22 !s110 1679195539
+!i10b 1
+Z23 !s108 1679195538.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/contador_163.vhdl|
+Z25 !s107 C:/Users/user/Desktop/Semana 2/contador_163.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R18
+R1
+R2
+DEx4 work 12 contador_163 0 22 Wj>hDW5JaQnFBm8n4zHQK1
+!i122 47
+l34
+L32 29
+Vb^X@5ndgX5UJ@jUXZMM1M1
+!s100 :UBU?:`V1RR45eY[;lMH80
+R6
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Econtador_m
+Z26 w1678714860
+Z27 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R18
+R1
+R2
+!i122 48
+R3
+Z28 8C:/Users/user/Desktop/Semana 2/contador_m.vhdl
+Z29 FC:/Users/user/Desktop/Semana 2/contador_m.vhdl
+l0
+Z30 L33 1
+VANNXIA=RIQ<Q7Vodg8I4[3
+!s100 O9oUMBV6aEHd<PJmNY6Hb0
+R6
+32
+R22
+!i10b 1
+Z31 !s108 1679195539.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/contador_m.vhdl|
+Z33 !s107 C:/Users/user/Desktop/Semana 2/contador_m.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R27
+R18
+R1
+R2
+DEx4 work 10 contador_m 0 22 ANNXIA=RIQ<Q7Vodg8I4[3
+!i122 48
+l50
+L48 30
+V88`SO<TkLIhJ]kcNIj4FZ2
+!s100 CZ3=HML=Oc`R5F34:ARK50
+R6
+32
+R22
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Eedge_detector
+Z34 w1675478454
+R1
+R2
+!i122 56
+R3
+Z35 8C:/Users/user/Desktop/Semana 2/edge_detector.vhdl
+Z36 FC:/Users/user/Desktop/Semana 2/edge_detector.vhdl
+l0
+L25 1
+V5C=KRLAGRaYL1?AQ;E;9j1
+!s100 8YZ2^jBlaX4?0]W6fg5fQ2
+R6
+32
+Z37 !s110 1679195542
+!i10b 1
+Z38 !s108 1679195541.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/edge_detector.vhdl|
+Z40 !s107 C:/Users/user/Desktop/Semana 2/edge_detector.vhdl|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 13 edge_detector 0 22 5C=KRLAGRaYL1?AQ;E;9j1
+!i122 56
+l39
+L34 21
+V[;JQ17iE0iTkHY<AjIT;13
+!s100 XhDFK>6^Pg;Cf>3KW;kN03
+R6
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R11
+R12
+Efluxo_dados
+Z41 w1679190861
+R27
+R18
+R1
+R2
+!i122 57
+R3
+Z42 8C:/Users/user/Desktop/Semana 2/fluxo_dados.vhdl
+Z43 FC:/Users/user/Desktop/Semana 2/fluxo_dados.vhdl
+l0
+R30
+V0XZ9jj0EN2fVE=oBAiHH<1
+!s100 9J8LnBAe[g=h8KX1V0LXj3
+R6
+32
+R37
+!i10b 1
+Z44 !s108 1679195542.000000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/fluxo_dados.vhdl|
+Z46 !s107 C:/Users/user/Desktop/Semana 2/fluxo_dados.vhdl|
+!i113 1
+R11
+R12
+Aestrutural
+Z47 DEx4 work 8 ram_16x4 0 22 g`PTnemeRgQL_3ISd6Mch0
+R27
+R18
+R1
+R2
+DEx4 work 11 fluxo_dados 0 22 0XZ9jj0EN2fVE=oBAiHH<1
+!i122 57
+l184
+L84 284
+VIDIQOhcVad<fGG7ibPZ]L1
+!s100 E4[M[984hg2CbS7>0XBe_2
+R6
+32
+R37
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+R12
+Egenius
+Z48 w1679194617
+R1
+R2
+!i122 58
+R3
+Z49 8C:/Users/user/Desktop/Semana 2/genius.vhdl
+Z50 FC:/Users/user/Desktop/Semana 2/genius.vhdl
+l0
+R21
+VYGZH5EhLhO]Mah5MmLOEm0
+!s100 o4;1ME:2nhOERXjRT73Qo2
+R6
+32
+R37
+!i10b 1
+R44
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/genius.vhdl|
+Z52 !s107 C:/Users/user/Desktop/Semana 2/genius.vhdl|
+!i113 1
+R11
+R12
+Aestrutural
+R1
+R2
+DEx4 work 6 genius 0 22 YGZH5EhLhO]Mah5MmLOEm0
+!i122 58
+l209
+L45 334
+VjhT5;04^S4d^b<<jR_Q0O0
+!s100 MjLha^K`c:3mQzZKQdDhm2
+R6
+32
+R37
+!i10b 1
+R44
+R51
+R52
+!i113 1
+R11
+R12
+Ehexa7seg
+Z53 w1675483604
+R1
+R2
+!i122 59
+R3
+Z54 8C:/Users/user/Desktop/Semana 2/hexa7seg.vhdl
+Z55 FC:/Users/user/Desktop/Semana 2/hexa7seg.vhdl
+l0
+L24 1
+VNzLIg6K]CUPT@eNgm@^Y33
+!s100 m70:2LbOnf0ODWJKbc?@F3
+R6
+32
+Z56 !s110 1679195543
+!i10b 1
+R44
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/hexa7seg.vhdl|
+Z58 !s107 C:/Users/user/Desktop/Semana 2/hexa7seg.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R1
+R2
+DEx4 work 8 hexa7seg 0 22 NzLIg6K]CUPT@eNgm@^Y33
+!i122 59
+l32
+L31 22
+V=D7[V5QbM@nI0L<=AT5On1
+!s100 U7QTX5YA5zSmB21GTflT=3
+R6
+32
+R56
+!i10b 1
+R44
+R57
+R58
+!i113 1
+R11
+R12
+Eram_16x4
+Z59 w1678588346
+R18
+R1
+R2
+!i122 60
+R3
+Z60 8C:/Users/user/Desktop/Semana 2/ram_16x4.vhdl
+Z61 FC:/Users/user/Desktop/Semana 2/ram_16x4.vhdl
+l0
+L28 1
+Vg`PTnemeRgQL_3ISd6Mch0
+!s100 7_Oke2`[UPj15mR6JKQR]2
+R6
+32
+R56
+!i10b 1
+Z62 !s108 1679195543.000000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/ram_16x4.vhdl|
+Z64 !s107 C:/Users/user/Desktop/Semana 2/ram_16x4.vhdl|
+!i113 1
+R11
+R12
+Aram_modelsim
+R18
+R1
+R2
+R47
+!i122 60
+l90
+L70 40
+VW<X<c?LzFVB3KHZa6`TZ33
+!s100 @Wb^3GhPLl>oU<nW@hX`C0
+R6
+32
+R56
+!i10b 1
+R62
+R63
+R64
+!i113 1
+R11
+R12
+Aram_mif
+R18
+R1
+R2
+R47
+!i122 60
+l48
+L40 28
+VL@:WRViVbhzaNJhb?YVj_0
+!s100 li^dkRXUzaR[dDlo<aFOa3
+R6
+32
+R56
+!i10b 1
+R62
+R63
+R64
+!i113 1
+R11
+R12
+Eregistrador_n
+Z65 w1675483610
+R1
+R2
+!i122 61
+R3
+Z66 8C:/Users/user/Desktop/Semana 2/registrador_n.vhdl
+Z67 FC:/Users/user/Desktop/Semana 2/registrador_n.vhdl
+l0
+L36 1
+VHlbKf2VcahFg_gWc@:B[V0
+!s100 3bzKIeXZ[JC5lI:U7Z[362
+R6
+32
+R56
+!i10b 1
+R62
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/registrador_n.vhdl|
+Z69 !s107 C:/Users/user/Desktop/Semana 2/registrador_n.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R1
+R2
+DEx4 work 13 registrador_n 0 22 HlbKf2VcahFg_gWc@:B[V0
+!i122 61
+l51
+L49 16
+VCGVk>k6hO1hRHPj58^@:e1
+!s100 NJEJoUNzGSKQfC6FYC6Cz3
+R6
+32
+R56
+!i10b 1
+R62
+R68
+R69
+!i113 1
+R11
+R12
+Eunidade_controle
+Z70 w1679185135
+R1
+R2
+!i122 62
+R3
+Z71 8C:/Users/user/Desktop/Semana 2/unidade_controle.vhdl
+Z72 FC:/Users/user/Desktop/Semana 2/unidade_controle.vhdl
+l0
+L22 1
+VSQ9<zPemQzE5?OJ_BL7D;1
+!s100 iQME2T6n_]hjO`7i2l1m`0
+R6
+32
+Z73 !s110 1679195544
+!i10b 1
+R62
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/user/Desktop/Semana 2/unidade_controle.vhdl|
+Z75 !s107 C:/Users/user/Desktop/Semana 2/unidade_controle.vhdl|
+!i113 1
+R11
+R12
+Afsm
+R1
+R2
+DEx4 work 16 unidade_controle 0 22 SQ9<zPemQzE5?OJ_BL7D;1
+!i122 62
+l90
+L74 231
+V4j8IDc>JAHTh0kkoYOX?42
+!s100 Vg^Xo`G6`mE[LET8@1HI^0
+R6
+32
+R73
+!i10b 1
+R62
+R74
+R75
+!i113 1
+R11
+R12

@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	C:/Users/user/Desktop/Semana 2/Quartus/genius.qarlog
+
+Archive:	C:/Users/user/Desktop/Semana 2/Quartus/genius.qar
+Date:		Sun Mar 19 00:29:42 2023
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/user/Desktop/Semana 2/Quartus/comparador_85.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/contador_163.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/contador_m.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/edge_detector.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/fluxo_dados.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/genius.qpf
+C:/Users/user/Desktop/Semana 2/Quartus/genius.qsf
+C:/Users/user/Desktop/Semana 2/Quartus/genius.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/hexa7seg.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/ram_16x4.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/registrador_n.vhdl
+C:/Users/user/Desktop/Semana 2/Quartus/unidade_controle.vhdl
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
