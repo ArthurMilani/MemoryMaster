@@ -1,3 +1,3 @@
 # MemoryMaster
 
-Bem vindo ao jogo Memory Master. Leu perdeu kk
+Bem vindo ao jogo Memory Master. Leu perdeu k
