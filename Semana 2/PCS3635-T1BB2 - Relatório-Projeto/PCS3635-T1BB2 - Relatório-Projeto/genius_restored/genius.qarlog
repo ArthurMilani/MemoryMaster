@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/genius.qarlog
+
+Archive:	C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/genius.qar
+Date:		Wed Mar 22 12:07:14 2023
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/assignment_defaults.qdf
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/comparador_85.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/contador_163.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/contador_m.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/edge_detector.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/fluxo_dados.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/genius.qpf
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/genius.qsf
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/genius.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/hexa7seg.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/ram_16x4.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/registrador_n.vhdl
+C:/Users/Operador/Desktop/PCS3635-T1BB2 - Planejamento-Projeto/genius_restored/unidade_controle.vhdl
+	======= Total: 13 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
