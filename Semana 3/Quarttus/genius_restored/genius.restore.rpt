@@ -1,5 +1,5 @@
 Restore Archived Project report for genius
-Wed Mar 22 22:42:56 2023
+Sat Mar 25 19:54:46 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Wed Mar 22 22:42:56 2023 ;
+; Restore Archived Project Status ; Successful - Sat Mar 25 19:54:46 2023 ;
 ; Revision Name                   ; genius                                ;
 ; Top-level Entity Name           ; genius                                ;
 ; Family                          ; Cyclone V                             ;
@@ -52,8 +52,8 @@ Info: Generated report 'genius.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Wed Mar 22 22:42:56 2023
-    Info: Elapsed time: 00:00:12
+    Info: Processing ended: Sat Mar 25 19:54:46 2023
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:01
 
 

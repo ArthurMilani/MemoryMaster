@@ -52,19 +52,31 @@ entity fluxo_dados is
         zeraVida2           : in std_logic;                        --Sinal para zerar a vida do jogador 2
         fimVidaJogador1     : out std_logic;                       --Sinal para avisar que o jogador 1 perdeu todas as 3 vidas 
         fimVidaJogador2     : out std_logic;                       --Sinal para avisar que o jogador 2 perdeu todas as 3 vidas
-        rodadaAtual         : out std_logic_vector (3 downto 0);   --Valor da rodada (contador de rodadas) 
         vidaAtual1          : out std_logic_vector (3 downto 0);   --Valor atual da vida do jogador 1 (contador de vidas) 
         vidaAtual2          : out std_logic_vector (3 downto 0);   --Valor atual da vida do jogador 2 (contador de vidas) 
+        rodadaAtual         : out std_logic_vector (3 downto 0);   --Valor da rodada (contador de rodadas) 
       
+        --Mode de jogo 3
+
+        contaTDecre         : in  std_logic;                --Enable do timer de TimeOut decrescente                
+        zeraTDecre          : in  std_logic;                --Reset do timer de TimeOut decrescente
+        fimTDecre           : out std_logic;                --Indica o fim do timer de TimeOut decrescente
+        
+        --Modo de jogo 4
+        
+        contaTCompar         : in  std_logic;                --Enable do timer de TimeOut decrescente                
+        zeraTCompar          : in  std_logic;                --Reset do timer de TimeOut decrescente
+        jogadorRap          : out std_logic;                --Indica o jogador mais rapido até agora.
+        
         clock               : in  std_logic;
         zeraE               : in  std_logic;                --Reset contador de jogadas     
         contaE              : in  std_logic;                --Enable contador de jogadas
         zeraR               : in  std_logic;                --Zera registrador das chaves
         registraR           : in  std_logic;                --Enable registrador das chaves 
-        contaT              : in  std_logic;                --Enable do timer de TimeOut                 
-        zeraT               : in  std_logic;                --Reset do timer de TimeOut
         contaCR             : in  std_logic;                --Enable contador de Rodadas           
         zeraCR              : in  std_logic;                --Reset contador de jogadas     
+        contaT              : in  std_logic;                --Enable do timer de TimeOut decrescente                
+        zeraT               : in  std_logic;                --Reset do timer de TimeOut decrescente
         chaves              : in  std_logic_vector (3 downto 0);  --Valor de entrada das chaves 
         igual               : out std_logic;                --Indica que a jogada está correta (registrador e memoria iguais)
         fimE                : out std_logic;                --Indica o fim do jogo (jogada chega no ultimo endereço)       
@@ -182,6 +194,38 @@ architecture estrutural of fluxo_dados is
         meio    : out std_logic
     );
     end component;
+  
+  component contador_m_decre is
+    generic (
+        constant M: integer := 6000 -- modulo do contador
+    );
+    port (
+        clock   : in  std_logic;
+        zera_as : in  std_logic;
+        zera_s  : in  std_logic;
+        conta   : in  std_logic;
+        Q       : out std_logic_vector(natural(ceil(log2(real(M))))-1 downto 0);
+        fim     : out std_logic;
+        meio    : out std_logic;
+        rodada  : in  std_logic_vector(3 downto 0)
+    );
+    end component;
+  component contador_m_compar is
+    generic (
+        constant M: integer := 2000000 -- modulo do contador
+    );
+    port (
+        clock        : in  std_logic;
+        zera_as      : in  std_logic;
+        zera_s       : in  std_logic;
+        conta        : in  std_logic;
+        jogadorAtual : in  std_logic;
+        Q            : out std_logic_vector(natural(ceil(log2(real(M))))-1 downto 0);
+        fim          : out std_logic;
+        meio         : out std_logic;
+        jogadorRap   : out  std_logic
+    );
+    end component;
 
 begin
 
@@ -292,7 +336,7 @@ begin
     );
 
   memoria: entity work.ram_16x4 (ram_mif)  -- usar esta linha para Intel Quartus
-  --memoria: entity work.ram_16x4 (ram_modelsim) -- usar arquitetura para ModelSim
+  -- memoria: entity work.ram_16x4 (ram_modelsim) -- usar arquitetura para ModelSim
     port map (                                              --Pronto
        clk          => clock,
        endereco     => s_endereco,
@@ -320,6 +364,33 @@ begin
       Q       => open,
       fim     => fimT,
       meio    => open
+    );
+  
+  timerDecrescente: contador_m_decre     --Contador to timer
+    generic map (M => 6000)
+    port map (
+      clock   => clock,
+      zera_as => '0',
+      zera_s  => zeraTDecre, 
+      conta   => contaTDecre,   
+      Q       => open,
+      fim     => fimTDecre,
+      meio    => open,
+      rodada  => s_rodada
+    );
+  
+  timerInfinito: contador_m_compar     --Contador to timer
+    generic map (M => 2000000)
+    port map (
+      clock   => clock,
+      zera_as => '0',
+      zera_s  => zeraTCompar, 
+      conta   => contaTCompar,   
+      jogadorAtual   => s_rodada(0),   
+      Q       => open,
+      fim     => open,
+      meio    => open,
+      jogadorRap  => jogadorRap
     );
 
   timerLeds: contador_m  --Contador do timer das Leds

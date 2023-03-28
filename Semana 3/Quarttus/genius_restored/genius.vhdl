@@ -70,6 +70,16 @@ architecture estrutural of genius is
             vidaAtual1          : out std_logic_vector (3 downto 0);   --Valor da vida do jogador 1 (contador de vidas) 
             vidaAtual2          : out std_logic_vector (3 downto 0);   --Valor da vida do jogador 2 (contador de vidas)      
 
+            --Modo de jogo 3
+            contaTDecre         : in  std_logic;                --Enable do timer de TimeOut                 
+            zeraTDecre          : in  std_logic;                --Reset do timer de TimeOut
+            fimTDecre           : out std_logic;                --Indica o fim do timer de TimeOut
+            
+            --Modo de jogo 4                 
+            zeraTCompar          : in  std_logic;                --Reset do timer de TimeOut
+            contaTCompar           : out std_logic;                --Indica o fim do timer de TimeOut
+            jogadorRap           : out std_logic;                --Indica o fim do timer de TimeOut
+
             clock               : in  std_logic;
             zeraE               : in  std_logic;                --Reset contador de jogadas     
             contaE              : in  std_logic;                --Enable contador de jogadas
@@ -122,6 +132,16 @@ architecture estrutural of genius is
             vencedor2           : out std_logic;
             mostraPlacar        : out std_logic;          --Sinal de controle: permite primeira jogada aparecer
             mostraVencedor      : out std_logic;          --Sinal de controle: permite 
+
+            --Modo de Jogo 3
+            fimTimerTDecre      : in  std_logic;               --Sinal de condição: fim do timer de TimeOut
+            contaTDecre         : out std_logic;               --Sinal de controle: enable do timer de TimeOut
+            zeraContadorTDecre  : out std_logic;               --Sinal de controle: reset do timer de TimeOut
+            
+            --Modo de Jogo 4
+            jogadorRap           : in  std_logic;               --Sinal de condição: fim do timer de TimeOut
+            contaTCompar         : out std_logic;               --Sinal de controle: enable do timer de TimeOut
+            zeraContadorTCompar  : out std_logic;               --Sinal de controle: reset do timer de TimeOut
 
             clock          : in  std_logic; 
             reset          : in  std_logic;               --Sinal de condição: reset do circuito
@@ -205,8 +225,14 @@ architecture estrutural of genius is
     signal s_mostrouJogada       : std_logic;
     signal s_mostraPlacar        : std_logic;
     signal s_mostraVencedor      : std_logic;
+    signal s_zeraTDecre          : std_logic;
+    signal s_contaTDecre         : std_logic;
+    signal s_fimTDecre           : std_logic;
+    signal s_zeraTCompar          : std_logic;
+    signal s_contaTCompar         : std_logic;
+    signal s_jogadorRap           : std_logic;
     
-
+    
     begin
 
     s_display6 <= "0001" when s_mostraPlacar='1' else 
@@ -301,6 +327,16 @@ architecture estrutural of genius is
             vidaAtual2         => s_vidaAtual2,
             escreve            => s_escreve,
 
+            --Modo de Jogo 3
+            contaTDecre        => s_contaTDecre,
+            zeraTDecre         => s_zeraTDecre,
+            fimTDecre          => s_fimTDecre,
+            
+            --Modo de Jogo 4
+            contaTCompar        => s_contaTCompar,
+            zeraTCompar         => s_zeraTCompar,
+            jogadorRap          => s_jogadorRap, 
+
             clock              => clock,
             zeraE              => s_zeraE,
             contaE             => s_contaE,
@@ -353,6 +389,16 @@ architecture estrutural of genius is
             mostraPlacar      => s_mostraPlacar,     
             mostraVencedor    => s_mostraVencedor,     
 
+            --Modo de jogo 3
+            fimTimerTDecre     => s_fimTDecre,
+            contaTDecre        => s_contaTDecre,
+            zeraContadorTDecre => s_zeraTDecre,
+            
+            --Modo de jogo 3
+            jogadorRap          => s_jogadorRap,
+            contaTCompar        => s_contaTCompar,
+            zeraContadorTCompar => s_zeraTCompar,
+
             clock     => clock,
             reset     => reset,
             iniciar   => iniciar, 
@@ -366,11 +412,11 @@ architecture estrutural of genius is
             pronto    => pronto,
             db_estado => s_estado,
             ganhou    => ganhou,  
-            perdeu     => perdeu,
+            perdeu    => perdeu,
             fimTimer  => s_fimT,
             contaT    => s_contaT,
-            escreve    => s_escreve,
             zeraContador => s_zeraT,
+            escreve    => s_escreve,
             db_timeout => db_timeout,
             fimRodada  => s_fimRodada,
             zeraCR     => s_zeraCR,

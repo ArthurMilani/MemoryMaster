@@ -45,6 +45,18 @@ entity unidade_controle is
         vencedor2           : out std_logic;          --Sinal de controle: ativa quando o jogador 2 um ganha
         mostraPlacar        : out std_logic;          --Sinal de controle: permite primeira que mostre o placar
         mostraVencedor      : out std_logic;          --Sinal de controle: permite primeira que mostre o vecedor(s)
+        
+        --Modo de Jogo 3
+
+        fimTimerTDecre     : in  std_logic;            --Sinal de condição: fim do timer de TimeOut
+        contaTDecre        : out std_logic;                --Sinal de controle: enable do timer de TimeOut
+        zeraContadorTDecre : out std_logic;           --Sinal de controle: reset do timer de TimeOut
+        
+        --Modo de jogo 4
+        
+        jogadorRap          : in  std_logic;            --Indica o jogador mais rapido até agora.
+        contaTCompar        : out std_logic;           --Sinal de controle: enable do timer de TimeOut
+        zeraContadorTCompar : out std_logic;           --Sinal de controle: reset do timer de TimeOut
 
         clock          : in  std_logic; 
         reset          : in  std_logic;               --Sinal de condição: reset do circuito
@@ -83,6 +95,9 @@ architecture fsm of unidade_controle is
      ultRodadaMulti, proxRodadaMulti, registraNovaJogadaMulti, mostraGanhador, esperaNovaJogadaMulti, escreveNovaJogadaMulti,
      ambosGanham, decrementaVida1, decrementaVida2, jogador1Ganha, jogador2Ganha,
 
+     --Modo de Jogo 3
+     jogadasMultiTDecre, esperaNovaJogadaMultiTDecre,
+
      preparacao, iniRodada, proxRodada, ultRodada, jogadas,
      registra, comparacao, proximo, certo, errado, erroTimeOut, esperaNovaJogada, registraNovaJogada,
      escreveNovaJogada);
@@ -114,28 +129,31 @@ begin
         mostraJogadaEstado when  Eatual=iniRodada else
         mostraJogadaEstado when  Eatual=mostraJogadaEstado and mostrouJogada='0' else
         resetaContadorE    when  Eatual=mostraJogadaEstado and mostrouJogada='1' else
-        jogadas            when  Eatual=resetaContadorE else
+        jogadas            when  Eatual=resetaContadorE and nivelSelecionado="0001" else
 
         --JogoModo 2
 
         iniRodadaMulti          when Eatual=preparacao and nivelSelecionado="0010" else
+        iniRodadaMulti          when Eatual=preparacao and nivelSelecionado="0100" else
         mostraPlacarJogador     when Eatual=iniRodadaMulti else
-        mostraPlacarJogador     when Eatual=mostraPLacarJogador and fimTimer='0' else
-        jogadasMulti            when Eatual=mostraPLacarJogador and fimTimer='1' else
+        mostraPlacarJogador     when Eatual=mostraPLacarJogador and fimTimer='0' else        
+        mostraJogadaEstado      when Eatual=mostraPlacarJogador and fimTimer='1' else
+        mostraJogadaEstado      when Eatual=mostraPlacarJogador and mostrouJogada='0' else
+        jogadasMulti            when Eatual=resetaContadorE and nivelSelecionado="0010" else
         jogadasMulti            when Eatual=jogadasMulti and fezJogada='0' and fimTimer = '0' else
         erroTimeOutMulti        when Eatual=jogadasMulti and fimTimer = '1'  else  
-        erroTimeOutMulti        when Eatual=esperaNovaJogadaMulti and fimTimer = '1'  else  
         preparacao              when Eatual=jogador1Ganha  and iniciar='1' else  
         preparacao              when Eatual=jogador2Ganha  and iniciar='1' else  
         preparacao              when Eatual=ambosGanham and iniciar='1' else  
         registraMulti           when Eatual=jogadasMulti and fezJogada='1' and fimTimer = '0' else                 
         comparacaoMulti         when Eatual=registraMulti else
         proximoMulti            when Eatual=comparacaoMulti and fimRodada='0' and igual = '1' else 
-        jogadasMulti            when Eatual=proximoMulti else
+        jogadasMulti            when Eatual=proximoMulti and nivelSelecionado="0010" else
         ultRodadaMulti          when Eatual=comparacaoMulti and fimRodada='1' and igual = '1' else
         proxRodadaMulti         when Eatual=ultRodadaMulti and fimCerto='0' else
-        esperaNovaJogadaMulti   when Eatual=proxRodadaMulti else
+        esperaNovaJogadaMulti   when Eatual=proxRodadaMulti and nivelSelecionado="0010" else
         esperaNovaJogadaMulti   when Eatual=esperaNovaJogadaMulti and fezJogada='0' and fimTimer='0' else
+        erroTimeOutMulti        when Eatual=esperaNovaJogadaMulti and fimTimer = '1'  else  
         registraNovaJogadaMulti when Eatual=esperaNovaJogadaMulti and fezJogada='1' and fimTimer='0' else
         escreveNovaJogadaMulti  when Eatual=registraNovaJogadaMulti else
         iniRodadaMulti          when Eatual=escreveNovaJogadaMulti else
@@ -151,7 +169,19 @@ begin
         ambosGanham             when Eatual=ambosGanham and iniciar ='0' else  
         jogador2Ganha           when Eatual=jogador2Ganha and iniciar ='0' else             
         jogador2Ganha           when Eatual=erroTimeOutMulti and rodadaAtual(0)='0' else       
+        
+        --Modo de jogo 3
 
+        jogadasMultiTDecre      when Eatual=resetaContadorE and nivelSelecionado="0100" else
+        jogadasMultiTDecre      when Eatual=jogadasMultiTDecre and fezJogada='0' and fimTimerTDecre = '0' else
+        jogadasMultiTDecre      when Eatual=proximoMulti and nivelSelecionado="0100" else
+        erroTimeOutMulti        when Eatual=jogadasMultiTDecre and fimTimerTDecre = '1'  else  
+        registraMulti           when Eatual=jogadasMultiTDecre and fezJogada='1' and fimTimerTDecre = '0' else                 
+        esperaNovaJogadaMultiTDecre  when Eatual=proxRodadaMulti and nivelSelecionado="0100" else
+        esperaNovaJogadaMultiTDecre   when Eatual=esperaNovaJogadaMultiTDecre and fezJogada='0' and fimTimerTDecre='0' else
+        erroTimeOutMulti        when Eatual=esperaNovaJogadaMultiTDecre and fimTimerTDecre = '1'  else  
+        registraNovaJogadaMulti when Eatual=esperaNovaJogadaMultiTDecre and fezJogada='1' and fimTimerTDecre='0' else
+        
         jogadas            when  Eatual=jogadas and fezJogada='0' and fimTimer = '0' else
         erroTimeOut        when  Eatual=jogadas and fimTimer = '1'  else  
         erroTimeOut        when  Eatual=esperaNovaJogada and fimTimer = '1'  else  
@@ -280,25 +310,44 @@ begin
                              '0' when others;
 
     with Eatual select
-    mostraVencedor <= '1' when jogador1Ganha | jogador2Ganha | ambosGanham,  
+        mostraVencedor <= '1' when jogador1Ganha | jogador2Ganha | ambosGanham,  
+                          '0' when others;
+
+    --Modo de Jogo 3
+    
+    with Eatual select
+        contaTDecre <='1' when jogadasMultiTDecre | esperaNovaJogadaMultiTDecre,
                       '0' when others;
-                      
+
+    with Eatual select  
+        zeraContadorTDecre <= '0' when jogadasMultiTDecre | esperaNovaJogadaMultiTDecre,
+                              '1' when others;
+
+    --Modo de Jogo 4
+
+    with Eatual select 
+        contaTCompar <= '1' when jogadasMulti | esperaNovaJogadaMulti,
+                        '0' when others;
+    
+    with Eatual select  
+        zeraContadorTCompar <= '1' when preparacao,
+                               '0' when others;
     
     -- saida de depuracao (db_estado)
     with Eatual select
-        db_estado <= "0000" when inicial,           -- 0
-                     "0001" when seletorNivel,      -- 1
-                     "0010" when jogadasMulti,      -- 2
-                     "0011" when esperaNovaJogadaMulti,           -- 3
+        db_estado <= "0000" when inicial,                -- 0
+                     "0001" when seletorNivel,           -- 1
+                     "0010" when jogadasMulti,           -- 2
+                     "0011" when esperaNovaJogadaMulti,  -- 3
                      "0100" when jogador1Ganha,          -- 4
-                     "0101" when jogador2Ganha,        -- 5
-                     "0110" when ambosGanham,           -- 6
-                     "0111" when mostraPlacarJogador,         -- 7
-                     "0100" when proxRodada,        -- 8
-                     "1010" when esperaNovaJogada,  -- A
-                     "1100" when certo,             -- C    
-                     "1110" when errado,            -- E
-                     "1111" when erroTimeOut,       -- E  
-                     "1110" when others;            -- F
+                     "0101" when jogador2Ganha,          -- 5
+                     "0110" when ambosGanham,            -- 6
+                     "0111" when mostraPlacarJogador,    -- 7
+                     "0100" when proxRodada,             -- 8
+                     "1010" when esperaNovaJogada,       -- A
+                     "1100" when certo,                  -- C    
+                     "1110" when errado,                 -- E
+                     "1111" when erroTimeOut,            -- E  
+                     "1110" when others;                 -- F
 
 end architecture fsm;
