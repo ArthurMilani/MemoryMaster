@@ -1,0 +1,585 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/LabDigi/Quartus
+Ecircuito_jogo_tb_acerto
+Z0 w1680121135
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 66
+Z3 dC:/Users/Arthur/Desktop/ModelSim
+Z4 8C:/Users/Arthur/Desktop/ModelSim/circuito_jogo_tb_acerto.vhdl
+Z5 FC:/Users/Arthur/Desktop/ModelSim/circuito_jogo_tb_acerto.vhdl
+l0
+L23 1
+Vj`D7UGc_i^dfLfYN`nb1a1
+!s100 BjcX:]cJFC2bnWzUj9]?@3
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1680121160
+!i10b 1
+Z8 !s108 1680121160.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/circuito_jogo_tb_acerto.vhdl|
+Z10 !s107 C:/Users/Arthur/Desktop/ModelSim/circuito_jogo_tb_acerto.vhdl|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Atb
+R1
+R2
+DEx4 work 23 circuito_jogo_tb_acerto 0 22 j`D7UGc_i^dfLfYN`nb1a1
+!i122 66
+l80
+L26 1129
+VhPReRJWd>CEkYj9ccO78k3
+!s100 F;YGJZAm:b[e?RVzmIPlO1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecomparador_85
+Z13 w1680114360
+R1
+R2
+!i122 67
+R3
+Z14 8C:/Users/Arthur/Desktop/ModelSim/comparador_85.vhdl
+Z15 FC:/Users/Arthur/Desktop/ModelSim/comparador_85.vhdl
+l0
+L18 1
+VnRX1cKGSWahUOZjWkD0Vo3
+!s100 UchionOWWKZd[S9Df?mH>0
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/comparador_85.vhdl|
+Z17 !s107 C:/Users/Arthur/Desktop/ModelSim/comparador_85.vhdl|
+!i113 1
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 13 comparador_85 0 22 nRX1cKGSWahUOZjWkD0Vo3
+!i122 67
+l41
+L37 20
+V1]eQ[UffKzW]]?63mLgma0
+!s100 P^;hPi]5OVVdjL6GdC0U80
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Econtador_163
+R13
+Z18 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 68
+R3
+Z19 8C:/Users/Arthur/Desktop/ModelSim/contador_163.vhdl
+Z20 FC:/Users/Arthur/Desktop/ModelSim/contador_163.vhdl
+l0
+Z21 L19 1
+VWj>hDW5JaQnFBm8n4zHQK1
+!s100 HncTPI9f>PSaSM@8d2b100
+R6
+32
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/contador_163.vhdl|
+Z23 !s107 C:/Users/Arthur/Desktop/ModelSim/contador_163.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R18
+R1
+R2
+DEx4 work 12 contador_163 0 22 Wj>hDW5JaQnFBm8n4zHQK1
+!i122 68
+l34
+L32 29
+Vb^X@5ndgX5UJ@jUXZMM1M1
+!s100 :UBU?:`V1RR45eY[;lMH80
+R6
+32
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Econtador_m
+R13
+Z24 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R18
+R1
+R2
+!i122 69
+R3
+Z25 8C:/Users/Arthur/Desktop/ModelSim/contador_m.vhdl
+Z26 FC:/Users/Arthur/Desktop/ModelSim/contador_m.vhdl
+l0
+Z27 L33 1
+VANNXIA=RIQ<Q7Vodg8I4[3
+!s100 O9oUMBV6aEHd<PJmNY6Hb0
+R6
+32
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/contador_m.vhdl|
+Z29 !s107 C:/Users/Arthur/Desktop/ModelSim/contador_m.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R18
+R1
+R2
+DEx4 work 10 contador_m 0 22 ANNXIA=RIQ<Q7Vodg8I4[3
+!i122 69
+l50
+L48 30
+V88`SO<TkLIhJ]kcNIj4FZ2
+!s100 CZ3=HML=Oc`R5F34:ARK50
+R6
+32
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Econtador_m_compar
+R13
+R24
+R18
+R1
+R2
+!i122 70
+R3
+Z30 8C:/Users/Arthur/Desktop/ModelSim/contador_m_compar.vhdl
+Z31 FC:/Users/Arthur/Desktop/ModelSim/contador_m_compar.vhdl
+l0
+R27
+VI@fE=1:h]bE`<1]fSzKfQ2
+!s100 7mlVCTe]`z9zm:B6IE_Ze3
+R6
+32
+Z32 !s110 1680121161
+!i10b 1
+Z33 !s108 1680121161.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/contador_m_compar.vhdl|
+Z35 !s107 C:/Users/Arthur/Desktop/ModelSim/contador_m_compar.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R18
+R1
+R2
+DEx4 work 17 contador_m_compar 0 22 I@fE=1:h]bE`<1]fSzKfQ2
+!i122 70
+l53
+L50 48
+VC1AK7gV:m;Xo>ch9I:>OA1
+!s100 3X7;83E59MzaFY0TiP@lT2
+R6
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R11
+R12
+Econtador_m_decre
+R13
+R24
+R18
+R1
+R2
+!i122 71
+R3
+Z36 8C:/Users/Arthur/Desktop/ModelSim/contador_m_decre.vhdl
+Z37 FC:/Users/Arthur/Desktop/ModelSim/contador_m_decre.vhdl
+l0
+R27
+Vb7OKliX^PEQD;[R1Sa@gT2
+!s100 4gW@7AT0aU>@RdFY2X4k22
+R6
+32
+R32
+!i10b 1
+R33
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/contador_m_decre.vhdl|
+Z39 !s107 C:/Users/Arthur/Desktop/ModelSim/contador_m_decre.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R24
+R18
+R1
+R2
+DEx4 work 16 contador_m_decre 0 22 b7OKliX^PEQD;[R1Sa@gT2
+!i122 71
+l53
+L49 45
+VYad?U?O?m?^JYCzH55CM>3
+!s100 ?F[>Q0H1d4D=:NX]==nmJ3
+R6
+32
+R32
+!i10b 1
+R33
+R38
+R39
+!i113 1
+R11
+R12
+Eedge_detector
+R13
+R1
+R2
+!i122 72
+R3
+Z40 8C:/Users/Arthur/Desktop/ModelSim/edge_detector.vhdl
+Z41 FC:/Users/Arthur/Desktop/ModelSim/edge_detector.vhdl
+l0
+L25 1
+V5C=KRLAGRaYL1?AQ;E;9j1
+!s100 8YZ2^jBlaX4?0]W6fg5fQ2
+R6
+32
+R32
+!i10b 1
+R33
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/edge_detector.vhdl|
+Z43 !s107 C:/Users/Arthur/Desktop/ModelSim/edge_detector.vhdl|
+!i113 1
+R11
+R12
+Artl
+R1
+R2
+DEx4 work 13 edge_detector 0 22 5C=KRLAGRaYL1?AQ;E;9j1
+!i122 72
+l39
+L34 21
+V[;JQ17iE0iTkHY<AjIT;13
+!s100 XhDFK>6^Pg;Cf>3KW;kN03
+R6
+32
+R32
+!i10b 1
+R33
+R42
+R43
+!i113 1
+R11
+R12
+Efluxo_dados
+Z44 w1680120317
+R24
+R18
+R1
+R2
+!i122 73
+R3
+Z45 8C:\Users\Arthur\Desktop\ModelSim\fluxo_dados.vhdl
+Z46 FC:\Users\Arthur\Desktop\ModelSim\fluxo_dados.vhdl
+l0
+R27
+VG_E=XVPQ4g>z`a?CFih8V0
+!s100 dE]@7jAPm:3G=H?DEg3:I2
+R6
+32
+R32
+!i10b 1
+R33
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Arthur\Desktop\ModelSim\fluxo_dados.vhdl|
+Z48 !s107 C:\Users\Arthur\Desktop\ModelSim\fluxo_dados.vhdl|
+!i113 1
+R11
+R12
+Aestrutural
+Z49 DEx4 work 8 ram_16x4 0 22 g`PTnemeRgQL_3ISd6Mch0
+R24
+R18
+R1
+R2
+DEx4 work 11 fluxo_dados 0 22 G_E=XVPQ4g>z`a?CFih8V0
+!i122 73
+l230
+L97 345
+VQ>D_XI=^`[oCK6oW<9eR72
+!s100 OId<8iKDP28B;JT9l>^dY1
+R6
+32
+R32
+!i10b 1
+R33
+R47
+R48
+!i113 1
+R11
+R12
+Egenius
+R13
+R1
+R2
+!i122 74
+R3
+Z50 8C:/Users/Arthur/Desktop/ModelSim/genius.vhdl
+Z51 FC:/Users/Arthur/Desktop/ModelSim/genius.vhdl
+l0
+R21
+VYGZH5EhLhO]Mah5MmLOEm0
+!s100 o4;1ME:2nhOERXjRT73Qo2
+R6
+32
+R32
+!i10b 1
+R33
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/genius.vhdl|
+Z53 !s107 C:/Users/Arthur/Desktop/ModelSim/genius.vhdl|
+!i113 1
+R11
+R12
+Aestrutural
+R1
+R2
+DEx4 work 6 genius 0 22 YGZH5EhLhO]Mah5MmLOEm0
+!i122 74
+l236
+L45 385
+Vo]<b3M@zKG>a[b;EJ48_f3
+!s100 VBf^hPI8To7f2Ka>zFl:j2
+R6
+32
+R32
+!i10b 1
+R33
+R52
+R53
+!i113 1
+R11
+R12
+Ehexa7seg
+R13
+R1
+R2
+!i122 75
+R3
+Z54 8C:/Users/Arthur/Desktop/ModelSim/hexa7seg.vhdl
+Z55 FC:/Users/Arthur/Desktop/ModelSim/hexa7seg.vhdl
+l0
+L24 1
+VNzLIg6K]CUPT@eNgm@^Y33
+!s100 m70:2LbOnf0ODWJKbc?@F3
+R6
+32
+R32
+!i10b 1
+R33
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/hexa7seg.vhdl|
+Z57 !s107 C:/Users/Arthur/Desktop/ModelSim/hexa7seg.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R1
+R2
+DEx4 work 8 hexa7seg 0 22 NzLIg6K]CUPT@eNgm@^Y33
+!i122 75
+l32
+L31 22
+V=D7[V5QbM@nI0L<=AT5On1
+!s100 U7QTX5YA5zSmB21GTflT=3
+R6
+32
+R32
+!i10b 1
+R33
+R56
+R57
+!i113 1
+R11
+R12
+Eram_16x4
+R13
+R18
+R1
+R2
+!i122 76
+R3
+Z58 8C:/Users/Arthur/Desktop/ModelSim/ram_16x4.vhdl
+Z59 FC:/Users/Arthur/Desktop/ModelSim/ram_16x4.vhdl
+l0
+L28 1
+Vg`PTnemeRgQL_3ISd6Mch0
+!s100 7_Oke2`[UPj15mR6JKQR]2
+R6
+32
+R32
+!i10b 1
+R33
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/ram_16x4.vhdl|
+Z61 !s107 C:/Users/Arthur/Desktop/ModelSim/ram_16x4.vhdl|
+!i113 1
+R11
+R12
+Aram_modelsim
+R18
+R1
+R2
+R49
+!i122 76
+l90
+L70 40
+VW<X<c?LzFVB3KHZa6`TZ33
+!s100 @Wb^3GhPLl>oU<nW@hX`C0
+R6
+32
+R32
+!i10b 1
+R33
+R60
+R61
+!i113 1
+R11
+R12
+Aram_mif
+R18
+R1
+R2
+R49
+!i122 76
+l48
+L40 28
+VL@:WRViVbhzaNJhb?YVj_0
+!s100 li^dkRXUzaR[dDlo<aFOa3
+R6
+32
+R32
+!i10b 1
+R33
+R60
+R61
+!i113 1
+R11
+R12
+Eregistrador_n
+R13
+R1
+R2
+!i122 77
+R3
+Z62 8C:/Users/Arthur/Desktop/ModelSim/registrador_n.vhdl
+Z63 FC:/Users/Arthur/Desktop/ModelSim/registrador_n.vhdl
+l0
+L36 1
+VHlbKf2VcahFg_gWc@:B[V0
+!s100 3bzKIeXZ[JC5lI:U7Z[362
+R6
+32
+Z64 !s110 1680121162
+!i10b 1
+Z65 !s108 1680121162.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/registrador_n.vhdl|
+Z67 !s107 C:/Users/Arthur/Desktop/ModelSim/registrador_n.vhdl|
+!i113 1
+R11
+R12
+Acomportamental
+R1
+R2
+DEx4 work 13 registrador_n 0 22 HlbKf2VcahFg_gWc@:B[V0
+!i122 77
+l51
+L49 16
+VCGVk>k6hO1hRHPj58^@:e1
+!s100 NJEJoUNzGSKQfC6FYC6Cz3
+R6
+32
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R11
+R12
+Eunidade_controle
+Z68 w1680118999
+R1
+R2
+!i122 78
+R3
+Z69 8C:/Users/Arthur/Desktop/ModelSim/unidade_controle.vhdl
+Z70 FC:/Users/Arthur/Desktop/ModelSim/unidade_controle.vhdl
+l0
+L22 1
+VA?7W4;<n8LQhjXXbiQ?YH3
+!s100 d@^V2QUmOJll8PGVO_Gj>3
+R6
+32
+R64
+!i10b 1
+R65
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/ModelSim/unidade_controle.vhdl|
+Z72 !s107 C:/Users/Arthur/Desktop/ModelSim/unidade_controle.vhdl|
+!i113 1
+R11
+R12
+Afsm
+R1
+R2
+Z73 DEx4 work 16 unidade_controle 0 22 A?7W4;<n8LQhjXXbiQ?YH3
+!i122 78
+l105
+Z74 L86 258
+Z75 VmC9f>SzRc:W_[ca5=[UTb0
+Z76 !s100 d55ei4cWfJ684d;hB[1@L0
+R6
+32
+R64
+!i10b 1
+R65
+R71
+R72
+!i113 1
+R11
+R12
