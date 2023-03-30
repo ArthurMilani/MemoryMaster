@@ -156,6 +156,8 @@ begin
         decrementaVida1         when Eatual=comparacaoMulti and igual='0' and rodadaAtual(0)='0' else
         proxRodadaMulti         when Eatual=ultRodadaMulti and fimCerto='0' else
         ambosGanham             when Eatual=ultRodadaMulti and fimCerto = '1' else 
+        jogador1Ganha           when Eatual=ultRodadaMulti and fimCerto = '1' and jogadorRap='0' else -- Esquema de vitória para modo 4
+        jogador2Ganha           when Eatual=ultRodadaMulti and fimCerto = '1' and jogadorRap='1' else -- Esquema de vitória para o modo 4
         esperaNovaJogadaMulti   when Eatual=proxRodadaMulti and nivelSelecionado="0010" else
         esperaNovaJogadaMultiTDecre  when Eatual=proxRodadaMulti and nivelSelecionado="0100" else
         esperaNovaJogadaMulti   when Eatual=esperaNovaJogadaMulti and fezJogada='0' and fimTimer='0' else

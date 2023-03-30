@@ -1,5 +1,5 @@
 Analysis & Synthesis report for genius
-Wed Mar 29 16:45:26 2023
+Thu Mar 30 15:26:51 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 29 16:45:26 2023       ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 30 15:26:51 2023       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; genius                                      ;
 ; Top-level Entity Name           ; genius                                      ;
@@ -177,37 +177,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processors 3-4         ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                          ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                   ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
-; contador_m_decre.vhdl            ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/contador_m_decre.vhdl  ;         ;
-; contador_m_compar.vhdl           ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/contador_m_compar.vhdl ;         ;
-; unidade_controle.vhdl            ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/unidade_controle.vhdl  ;         ;
-; registrador_n.vhdl               ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/registrador_n.vhdl     ;         ;
-; ram_16x4.vhdl                    ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/ram_16x4.vhdl          ;         ;
-; hexa7seg.vhdl                    ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/hexa7seg.vhdl          ;         ;
-; genius.vhdl                      ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/genius.vhdl            ;         ;
-; fluxo_dados.vhdl                 ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl       ;         ;
-; edge_detector.vhdl               ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/edge_detector.vhdl     ;         ;
-; contador_m.vhdl                  ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/contador_m.vhdl        ;         ;
-; contador_163.vhdl                ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/contador_163.vhdl      ;         ;
-; comparador_85.vhdl               ; yes             ; User VHDL File  ; C:/Users/Arthur/Desktop/genius_restored/comparador_85.vhdl     ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; contador_m_decre.vhdl            ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_decre.vhdl  ;         ;
+; contador_m_compar.vhdl           ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_compar.vhdl ;         ;
+; unidade_controle.vhdl            ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/unidade_controle.vhdl  ;         ;
+; registrador_n.vhdl               ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/registrador_n.vhdl     ;         ;
+; ram_16x4.vhdl                    ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/ram_16x4.vhdl          ;         ;
+; hexa7seg.vhdl                    ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/hexa7seg.vhdl          ;         ;
+; genius.vhdl                      ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/genius.vhdl            ;         ;
+; fluxo_dados.vhdl                 ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl       ;         ;
+; edge_detector.vhdl               ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/edge_detector.vhdl     ;         ;
+; contador_m.vhdl                  ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m.vhdl        ;         ;
+; contador_163.vhdl                ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_163.vhdl      ;         ;
+; comparador_85.vhdl               ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/comparador_85.vhdl     ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -606,7 +605,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -616,67 +615,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Mar 29 16:45:09 2023
+    Info: Processing started: Thu Mar 30 15:26:11 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off genius -c genius
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file contador_m_decre.vhdl
-    Info (12022): Found design unit 1: contador_m_decre-comportamental File: C:/Users/Arthur/Desktop/genius_restored/contador_m_decre.vhdl Line: 49
-    Info (12023): Found entity 1: contador_m_decre File: C:/Users/Arthur/Desktop/genius_restored/contador_m_decre.vhdl Line: 33
+    Info (12022): Found design unit 1: contador_m_decre-comportamental File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_decre.vhdl Line: 49
+    Info (12023): Found entity 1: contador_m_decre File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_decre.vhdl Line: 33
 Info (12021): Found 2 design units, including 1 entities, in source file contador_m_compar.vhdl
-    Info (12022): Found design unit 1: contador_m_compar-comportamental File: C:/Users/Arthur/Desktop/genius_restored/contador_m_compar.vhdl Line: 50
-    Info (12023): Found entity 1: contador_m_compar File: C:/Users/Arthur/Desktop/genius_restored/contador_m_compar.vhdl Line: 33
+    Info (12022): Found design unit 1: contador_m_compar-comportamental File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_compar.vhdl Line: 50
+    Info (12023): Found entity 1: contador_m_compar File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_compar.vhdl Line: 33
 Info (12021): Found 2 design units, including 1 entities, in source file unidade_controle.vhdl
-    Info (12022): Found design unit 1: unidade_controle-fsm File: C:/Users/Arthur/Desktop/genius_restored/unidade_controle.vhdl Line: 86
-    Info (12023): Found entity 1: unidade_controle File: C:/Users/Arthur/Desktop/genius_restored/unidade_controle.vhdl Line: 22
+    Info (12022): Found design unit 1: unidade_controle-fsm File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/unidade_controle.vhdl Line: 86
+    Info (12023): Found entity 1: unidade_controle File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/unidade_controle.vhdl Line: 22
 Info (12021): Found 2 design units, including 1 entities, in source file registrador_n.vhdl
-    Info (12022): Found design unit 1: registrador_n-comportamental File: C:/Users/Arthur/Desktop/genius_restored/registrador_n.vhdl Line: 49
-    Info (12023): Found entity 1: registrador_n File: C:/Users/Arthur/Desktop/genius_restored/registrador_n.vhdl Line: 36
+    Info (12022): Found design unit 1: registrador_n-comportamental File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/registrador_n.vhdl Line: 49
+    Info (12023): Found entity 1: registrador_n File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/registrador_n.vhdl Line: 36
 Info (12021): Found 3 design units, including 1 entities, in source file ram_16x4.vhdl
-    Info (12022): Found design unit 1: ram_16x4-ram_mif File: C:/Users/Arthur/Desktop/genius_restored/ram_16x4.vhdl Line: 40
-    Info (12022): Found design unit 2: ram_16x4-ram_modelsim File: C:/Users/Arthur/Desktop/genius_restored/ram_16x4.vhdl Line: 70
-    Info (12023): Found entity 1: ram_16x4 File: C:/Users/Arthur/Desktop/genius_restored/ram_16x4.vhdl Line: 28
+    Info (12022): Found design unit 1: ram_16x4-ram_mif File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/ram_16x4.vhdl Line: 40
+    Info (12022): Found design unit 2: ram_16x4-ram_modelsim File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/ram_16x4.vhdl Line: 70
+    Info (12023): Found entity 1: ram_16x4 File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/ram_16x4.vhdl Line: 28
 Info (12021): Found 2 design units, including 1 entities, in source file hexa7seg.vhdl
-    Info (12022): Found design unit 1: hexa7seg-comportamental File: C:/Users/Arthur/Desktop/genius_restored/hexa7seg.vhdl Line: 31
-    Info (12023): Found entity 1: hexa7seg File: C:/Users/Arthur/Desktop/genius_restored/hexa7seg.vhdl Line: 24
+    Info (12022): Found design unit 1: hexa7seg-comportamental File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/hexa7seg.vhdl Line: 31
+    Info (12023): Found entity 1: hexa7seg File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/hexa7seg.vhdl Line: 24
 Info (12021): Found 2 design units, including 1 entities, in source file genius.vhdl
-    Info (12022): Found design unit 1: genius-estrutural File: C:/Users/Arthur/Desktop/genius_restored/genius.vhdl Line: 45
-    Info (12023): Found entity 1: genius File: C:/Users/Arthur/Desktop/genius_restored/genius.vhdl Line: 19
+    Info (12022): Found design unit 1: genius-estrutural File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/genius.vhdl Line: 45
+    Info (12023): Found entity 1: genius File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/genius.vhdl Line: 19
 Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhdl
-    Info (12022): Found design unit 1: fluxo_dados-estrutural File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 97
-    Info (12023): Found entity 1: fluxo_dados File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 33
+    Info (12022): Found design unit 1: fluxo_dados-estrutural File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 97
+    Info (12023): Found entity 1: fluxo_dados File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 33
 Info (12021): Found 2 design units, including 1 entities, in source file edge_detector.vhdl
-    Info (12022): Found design unit 1: edge_detector-rtl File: C:/Users/Arthur/Desktop/genius_restored/edge_detector.vhdl Line: 34
-    Info (12023): Found entity 1: edge_detector File: C:/Users/Arthur/Desktop/genius_restored/edge_detector.vhdl Line: 25
+    Info (12022): Found design unit 1: edge_detector-rtl File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/edge_detector.vhdl Line: 34
+    Info (12023): Found entity 1: edge_detector File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/edge_detector.vhdl Line: 25
 Info (12021): Found 2 design units, including 1 entities, in source file contador_m.vhdl
-    Info (12022): Found design unit 1: contador_m-comportamental File: C:/Users/Arthur/Desktop/genius_restored/contador_m.vhdl Line: 48
-    Info (12023): Found entity 1: contador_m File: C:/Users/Arthur/Desktop/genius_restored/contador_m.vhdl Line: 33
+    Info (12022): Found design unit 1: contador_m-comportamental File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m.vhdl Line: 48
+    Info (12023): Found entity 1: contador_m File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m.vhdl Line: 33
 Info (12021): Found 2 design units, including 1 entities, in source file contador_163.vhdl
-    Info (12022): Found design unit 1: contador_163-comportamental File: C:/Users/Arthur/Desktop/genius_restored/contador_163.vhdl Line: 32
-    Info (12023): Found entity 1: contador_163 File: C:/Users/Arthur/Desktop/genius_restored/contador_163.vhdl Line: 19
+    Info (12022): Found design unit 1: contador_163-comportamental File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_163.vhdl Line: 32
+    Info (12023): Found entity 1: contador_163 File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_163.vhdl Line: 19
 Info (12021): Found 2 design units, including 1 entities, in source file comparador_85.vhdl
-    Info (12022): Found design unit 1: comparador_85-dataflow File: C:/Users/Arthur/Desktop/genius_restored/comparador_85.vhdl Line: 37
-    Info (12023): Found entity 1: comparador_85 File: C:/Users/Arthur/Desktop/genius_restored/comparador_85.vhdl Line: 18
+    Info (12022): Found design unit 1: comparador_85-dataflow File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/comparador_85.vhdl Line: 37
+    Info (12023): Found entity 1: comparador_85 File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/comparador_85.vhdl Line: 18
 Info (12127): Elaborating entity "genius" for the top level hierarchy
-Info (12128): Elaborating entity "hexa7seg" for hierarchy "hexa7seg:hexa7seg_display6" File: C:/Users/Arthur/Desktop/genius_restored/genius.vhdl Line: 242
-Info (12128): Elaborating entity "fluxo_dados" for hierarchy "fluxo_dados:dataFlux" File: C:/Users/Arthur/Desktop/genius_restored/genius.vhdl Line: 305
-Info (12128): Elaborating entity "contador_163" for hierarchy "fluxo_dados:dataFlux|contador_163:contadorEndereco" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 245
-Info (12128): Elaborating entity "comparador_85" for hierarchy "fluxo_dados:dataFlux|comparador_85:ComparadorJogada" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 293
-Info (12128): Elaborating entity "registrador_n" for hierarchy "fluxo_dados:dataFlux|registrador_n:registraChaves" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 329
-Info (12129): Elaborating entity "ram_16x4" using architecture "A:ram_mif" for hierarchy "fluxo_dados:dataFlux|ram_16x4:memoria" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 338
-Info (12128): Elaborating entity "edge_detector" for hierarchy "fluxo_dados:dataFlux|edge_detector:edgeDetector" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 349
-Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:dataFlux|contador_m:timer" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 357
-Info (12128): Elaborating entity "contador_m_decre" for hierarchy "fluxo_dados:dataFlux|contador_m_decre:timerDecrescente" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 369
-Warning (10492): VHDL Process Statement warning at contador_m_decre.vhdl(59): signal "tempoInicial" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Arthur/Desktop/genius_restored/contador_m_decre.vhdl Line: 59
-Info (12128): Elaborating entity "contador_m_compar" for hierarchy "fluxo_dados:dataFlux|contador_m_compar:timerInfinito" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 382
-Warning (10492): VHDL Process Statement warning at contador_m_compar.vhdl(57): signal "jogadorAtual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Arthur/Desktop/genius_restored/contador_m_compar.vhdl Line: 57
-Warning (10492): VHDL Process Statement warning at contador_m_compar.vhdl(68): signal "jogadorAtual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Arthur/Desktop/genius_restored/contador_m_compar.vhdl Line: 68
-Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:dataFlux|contador_m:timerLeds" File: C:/Users/Arthur/Desktop/genius_restored/fluxo_dados.vhdl Line: 396
-Info (12128): Elaborating entity "unidade_controle" for hierarchy "unidade_controle:unityControl" File: C:/Users/Arthur/Desktop/genius_restored/genius.vhdl Line: 366
+Info (12128): Elaborating entity "hexa7seg" for hierarchy "hexa7seg:hexa7seg_display6" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/genius.vhdl Line: 242
+Info (12128): Elaborating entity "fluxo_dados" for hierarchy "fluxo_dados:dataFlux" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/genius.vhdl Line: 305
+Info (12128): Elaborating entity "contador_163" for hierarchy "fluxo_dados:dataFlux|contador_163:contadorEndereco" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 245
+Info (12128): Elaborating entity "comparador_85" for hierarchy "fluxo_dados:dataFlux|comparador_85:ComparadorJogada" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 293
+Info (12128): Elaborating entity "registrador_n" for hierarchy "fluxo_dados:dataFlux|registrador_n:registraChaves" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 329
+Info (12129): Elaborating entity "ram_16x4" using architecture "A:ram_mif" for hierarchy "fluxo_dados:dataFlux|ram_16x4:memoria" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 338
+Info (12128): Elaborating entity "edge_detector" for hierarchy "fluxo_dados:dataFlux|edge_detector:edgeDetector" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 349
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:dataFlux|contador_m:timer" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 357
+Info (12128): Elaborating entity "contador_m_decre" for hierarchy "fluxo_dados:dataFlux|contador_m_decre:timerDecrescente" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 369
+Warning (10492): VHDL Process Statement warning at contador_m_decre.vhdl(59): signal "tempoInicial" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_decre.vhdl Line: 59
+Info (12128): Elaborating entity "contador_m_compar" for hierarchy "fluxo_dados:dataFlux|contador_m_compar:timerInfinito" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 382
+Warning (10492): VHDL Process Statement warning at contador_m_compar.vhdl(57): signal "jogadorAtual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_compar.vhdl Line: 57
+Warning (10492): VHDL Process Statement warning at contador_m_compar.vhdl(68): signal "jogadorAtual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/contador_m_compar.vhdl Line: 68
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:dataFlux|contador_m:timerLeds" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/fluxo_dados.vhdl Line: 396
+Info (12128): Elaborating entity "unidade_controle" for hierarchy "unidade_controle:unityControl" File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/genius.vhdl Line: 366
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "fluxo_dados:dataFlux|ram_16x4:memoria|memoria" is uninferred due to asynchronous read logic File: C:/Users/Arthur/Desktop/genius_restored/ram_16x4.vhdl Line: 42
+    Info (276007): RAM logic "fluxo_dados:dataFlux|ram_16x4:memoria|memoria" is uninferred due to asynchronous read logic File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/ram_16x4.vhdl Line: 42
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "display1[1]" is stuck at GND File: C:/Users/Arthur/Desktop/genius_restored/genius.vhdl Line: 32
+    Warning (13410): Pin "display1[1]" is stuck at GND File: C:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/genius_restored/genius.vhdl Line: 32
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -686,9 +685,9 @@ Info (21057): Implemented 489 device resources after synthesis - the final resou
     Info (21059): Implemented 53 output pins
     Info (21061): Implemented 429 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4859 megabytes
-    Info: Processing ended: Wed Mar 29 16:45:26 2023
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Thu Mar 30 15:26:51 2023
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:00:52
 
 

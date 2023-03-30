@@ -1,53 +1,63 @@
-# Compile of comparador_85.vhdl was successful.
-# Compile of contador_163.vhdl was successful.
-# Compile of contador_m.vhdl was successful.
-# Compile of edge_detector.vhdl was successful.
-# Compile of fluxo_dados.vhdl failed with 3 errors.
-# Compile of genius.vhdl was successful.
-# Compile of hexa7seg.vhdl was successful.
-# Compile of ram_16x4.vhdl was successful.
-# Compile of registrador_n.vhdl was successful.
-# Compile of unidade_controle.vhdl was successful.
-# 10 compiles, 1 failed with 3 errors.
-# Compile of fluxo_dados.vhdl was successful.
-# Compile of fluxo_dados.vhdl failed with 2 errors.
-# Compile of genius.vhdl was successful.
-# Compile of unidade_controle.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 16 errors.
-# 4 compiles, 3 failed with 19 errors.
-# Compile of fluxo_dados.vhdl was successful.
-# Compile of contador_m_decre.vhdl failed with 16 errors.
-# Compile of unidade_controle.vhdl failed with 1 errors.
-# Compile of unidade_controle.vhdl failed with 1 errors.
-# Compile of unidade_controle.vhdl failed with 1 errors.
-# Compile of unidade_controle.vhdl was successful.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 16 errors.
-# Compile of contador_m_decre.vhdl failed with 15 errors.
-# Compile of contador_m_decre.vhdl failed with 13 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 2 errors.
-# Compile of contador_m_decre.vhdl was successful.
-# Compile of contador_m_decre.vhdl was successful.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl failed with 1 errors.
-# Compile of contador_m_decre.vhdl was successful.
-# Compile of contador_m_decre.vhdl was successful.
-# Compile of contador_m_compar.vhdl failed with 3 errors.
-# Compile of contador_m_compar.vhdl failed with 1 errors.
+# Compile of contador_compar_tb.vhdl failed with 1 errors.
 # Compile of contador_m_compar.vhdl was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of contador_compar_tb.vhdl was successful.
+vsim -gui work.contador_compar_tb
+# vsim -gui work.contador_compar_tb 
+# Start time: 16:09:49 on Mar 30,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador_compar_tb(tb)
+# Loading work.contador_m_compar(comportamental)
+add wave -position insertpoint  \
+sim:/contador_compar_tb/clk_in \
+sim:/contador_compar_tb/zera_as_in \
+sim:/contador_compar_tb/zera_s_in \
+sim:/contador_compar_tb/s_jogadorAtual_in \
+sim:/contador_compar_tb/conta_in \
+sim:/contador_compar_tb/fim_out \
+sim:/contador_compar_tb/meio_out \
+sim:/contador_compar_tb/jogadorRap_s \
+sim:/contador_compar_tb/clockPeriod
+run -all
+# ** Note: inicio da simulacao
+#    Time: 0 ps  Iteration: 0  Instance: /contador_compar_tb
+# ** Note: fim da simulacao
+#    Time: 5019 ms  Iteration: 0  Instance: /contador_compar_tb
+# Compile of contador_compar_tb.vhdl was successful.
 # Compile of contador_m_compar.vhdl was successful.
-# Compile of unidade_controle.vhdl was successful.
-# Compile of fluxo_dados.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of contador_compar_tb.vhdl was successful.
 # Compile of contador_m_compar.vhdl was successful.
-# Compile of genius.vhdl failed with 1 errors.
-# Compile of genius.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/contador_compar_tb/clk_in \
+sim:/contador_compar_tb/zera_as_in \
+sim:/contador_compar_tb/zera_s_in \
+sim:/contador_compar_tb/s_jogadorAtual_in \
+sim:/contador_compar_tb/conta_in \
+sim:/contador_compar_tb/fim_out \
+sim:/contador_compar_tb/meio_out \
+sim:/contador_compar_tb/jogadorRap_s \
+sim:/contador_compar_tb/clockPeriod
+run -all
+# Compile of contador_compar_tb.vhdl was successful.
+# Compile of contador_m_compar.vhdl was successful.
+# 2 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/contador_compar_tb/clk_in \
+sim:/contador_compar_tb/zera_as_in \
+sim:/contador_compar_tb/zera_s_in \
+sim:/contador_compar_tb/s_jogadorAtual_in \
+sim:/contador_compar_tb/conta_in \
+sim:/contador_compar_tb/fim_out \
+sim:/contador_compar_tb/meio_out \
+sim:/contador_compar_tb/jogadorRap_s \
+sim:/contador_compar_tb/clockPeriod
+run -all
+# Compile of contador_compar_tb.vhdl was successful.
+# End time: 16:47:50 on Mar 30,2023, Elapsed time: 0:38:01
+# Errors: 0, Warnings: 12
