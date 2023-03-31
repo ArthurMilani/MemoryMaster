@@ -43,6 +43,7 @@ entity fluxo_dados is
         contaTimerLed       : in  std_logic;                --Enable timer das Leds
         mostraJogada        : in  std_logic;                --Enable para mostrar as jogadas a serem feitas
         mostrouJogada       : out std_logic;
+        escreve             : in std_logic;
       
         clock               : in  std_logic;
         zeraE               : in  std_logic;                --Reset contador de jogadas     
@@ -84,6 +85,7 @@ architecture estrutural of fluxo_dados is
   signal s_contaE      : std_logic;
   signal s_mostrouUmaJogada : std_logic;
   signal s_meioDaJogada : std_logic;
+  signal s_valorAleatorio : std_logic_vector(3 downto 0);
 
   component contador_163 is
     port (
@@ -165,6 +167,14 @@ architecture estrutural of fluxo_dados is
     );
     end component;
 
+    component bitvector_generator is
+      port (
+          clk    : in  std_logic;
+          rst    : in  std_logic;
+          output : out std_logic_vector(3 downto 0)
+      );
+    end component;
+
 begin
 
   -- sinais de controle ativos em alto
@@ -172,11 +182,20 @@ begin
   s_not_zeraE   <= not zeraE;
   s_not_zeraCR  <= not zeraCR;
   s_contaE <= s_mostrouUmaJogada or contaE;
+  s_not_escreve <= not escreve;
 
   --or das chaves de entrada
   orChaves <= chaves(3) or chaves(2) or chaves(1) or chaves(0);
   notOrChaves <= not orChaves;
   
+  geradorAleatorio: bitvector_generator
+    port map(
+      clk    => clock,
+      rst    => '0',
+      output => s_valorAleatorio
+    );
+
+
   contadorEndereco: contador_163
     port map (
         clock => clock,  
@@ -251,8 +270,8 @@ begin
     port map (                                              --Pronto
        clk          => clock,
        endereco     => s_endereco,
-       dado_entrada => s_chaves,
-       we           => '1', -- we ativo em baixo 
+       dado_entrada => s_valorAleatorio,     --s_chaves,
+       we           => s_not_escreve, -- we ativo em baixo 
        ce           => '0',
        dado_saida   => s_memoria
     );

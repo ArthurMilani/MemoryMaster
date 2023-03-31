@@ -134,7 +134,7 @@ begin
     chaves_in <= "0001";
     wait for 7*clockPeriod;
     chaves_in <= "0000";
-    wait for 1100*clockPeriod;
+    wait for 1099*clockPeriod;
 
 --Rodada 1
     
@@ -143,7 +143,7 @@ begin
         wait for 7*clockPeriod;
         chaves_in <= "0000";
         -- espera entre jogadas de 10 clocks
-        wait for 2100*clockPeriod; 
+        wait for 2099*clockPeriod; 
 
 --Rodada 2
 
@@ -152,7 +152,7 @@ begin
         wait for 7*clockPeriod;
         chaves_in <= "0000";
         -- espera entre jogadas de 10 clocks
-        wait for 10*clockPeriod;  
+        wait for 12*clockPeriod;  
     
         ---- jogada #2 (chaves=0010 e 5 clocks de duracao)
         chaves_in <= "0010";

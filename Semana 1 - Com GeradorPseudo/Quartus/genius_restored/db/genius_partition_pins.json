@@ -68,6 +68,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "db_memoria[1]",
+					"strict" : false
+				},
+				{
 					"name" : "db_memoria[2]",
 					"strict" : false
 				},

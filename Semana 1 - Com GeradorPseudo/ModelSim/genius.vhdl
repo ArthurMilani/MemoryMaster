@@ -56,6 +56,7 @@ architecture estrutural of genius is
             contaTimerLed       : in  std_logic;                --Enable timer das Leds
             mostraJogada        : in  std_logic;                --Enable para mostrar as jogadas a serem feitas
             mostrouJogada       : out std_logic;
+            escreve             : in  std_logic;
         
             clock               : in  std_logic;
             zeraE               : in  std_logic;                --Reset contador de jogadas     
@@ -207,6 +208,7 @@ architecture estrutural of genius is
             zeraTimerLed       => s_zeraTimerLed,
             contaTimerLed      => s_contaTimerLed,
             mostraJogada       => s_mostraJogada,
+            escreve            => s_escreve,
 
             clock              => clock,
             zeraE              => s_zeraE,

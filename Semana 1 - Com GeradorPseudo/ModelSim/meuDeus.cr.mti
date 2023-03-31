@@ -1,0 +1,107 @@
+{C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/unidade_controle.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/unidade_controle.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity unidade_controle
+-- Compiling architecture fsm of unidade_controle
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/ram_16x4.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/ram_16x4.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_16x4
+-- Compiling architecture ram_mif of ram_16x4
+-- Compiling architecture ram_modelsim of ram_16x4
+-- Loading entity ram_16x4
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/genius.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/genius.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity genius
+-- Compiling architecture estrutural of genius
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/comparador_85.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/comparador_85.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparador_85
+-- Compiling architecture dataflow of comparador_85
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/contador_m.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/contador_m.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity contador_m
+-- Compiling architecture comportamental of contador_m
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/generator.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/generator.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity bitvector_generator
+-- Compiling architecture behavioral of bitvector_generator
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/fluxo_dados.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/fluxo_dados.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity fluxo_dados
+-- Compiling architecture estrutural of fluxo_dados
+-- Loading entity ram_16x4
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/circuito_jogo_tb_acerto.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/circuito_jogo_tb_acerto.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity circuito_jogo_tb_acerto
+-- Compiling architecture tb of circuito_jogo_tb_acerto
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/contador_163.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/contador_163.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity contador_163
+-- Compiling architecture comportamental of contador_163
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/registrador_n.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/registrador_n.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador_n
+-- Compiling architecture comportamental of registrador_n
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/hexa7seg.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/hexa7seg.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hexa7seg
+-- Compiling architecture comportamental of hexa7seg
+
+} {} {}} {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/edge_detector.vhdl} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Arthur/Desktop/MemoryMaster/Semana 1 - Com GeradorPseudo/ModelSim/edge_detector.vhdl}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity edge_detector
+-- Compiling architecture rtl of edge_detector
+
+} {} {}}

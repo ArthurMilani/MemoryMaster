@@ -1,22 +1,24 @@
 
 State Machine - |genius|unidade_controle:unityControl|Eatual
-Name Eatual.escreveNovaJogada Eatual.registraNovaJogada Eatual.esperaNovaJogada Eatual.erroTimeOut Eatual.errado Eatual.certo Eatual.proximo Eatual.comparacao Eatual.registra Eatual.jogadas Eatual.ultRodada Eatual.proxRodada Eatual.iniRodada Eatual.preparacao Eatual.resetaContadorE Eatual.mostraJogadaEstado Eatual.registraNivelEstado Eatual.seletorNivel Eatual.inicial 
-Eatual.inicial 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-Eatual.seletorNivel 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-Eatual.registraNivelEstado 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-Eatual.mostraJogadaEstado 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-Eatual.resetaContadorE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-Eatual.preparacao 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-Eatual.iniRodada 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-Eatual.proxRodada 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-Eatual.ultRodada 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-Eatual.jogadas 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-Eatual.registra 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-Eatual.comparacao 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-Eatual.proximo 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-Eatual.certo 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-Eatual.errado 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-Eatual.erroTimeOut 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-Eatual.esperaNovaJogada 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-Eatual.registraNovaJogada 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-Eatual.escreveNovaJogada 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Name Eatual.jogadaAleatoria Eatual.contaMaisUm Eatual.escreveNovaJogada Eatual.registraNovaJogada Eatual.esperaNovaJogada Eatual.erroTimeOut Eatual.errado Eatual.certo Eatual.proximo Eatual.comparacao Eatual.registra Eatual.jogadas Eatual.ultRodada Eatual.proxRodada Eatual.iniRodada Eatual.preparacao Eatual.resetaContadorE Eatual.mostraJogadaEstado Eatual.registraNivelEstado Eatual.seletorNivel Eatual.inicial 
+Eatual.inicial 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Eatual.seletorNivel 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+Eatual.registraNivelEstado 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+Eatual.mostraJogadaEstado 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+Eatual.resetaContadorE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+Eatual.preparacao 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+Eatual.iniRodada 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+Eatual.proxRodada 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+Eatual.ultRodada 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+Eatual.jogadas 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+Eatual.registra 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+Eatual.comparacao 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.proximo 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.certo 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.errado 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.erroTimeOut 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.esperaNovaJogada 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.registraNovaJogada 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.escreveNovaJogada 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.contaMaisUm 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+Eatual.jogadaAleatoria 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

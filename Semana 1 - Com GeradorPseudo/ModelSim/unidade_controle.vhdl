@@ -68,7 +68,7 @@ architecture fsm of unidade_controle is
 
      preparacao, iniRodada, proxRodada, ultRodada, jogadas,
      registra, comparacao, proximo, certo, errado, erroTimeOut, esperaNovaJogada, registraNovaJogada,
-     escreveNovaJogada);
+     escreveNovaJogada, contaMaisUm, jogadaAleatoria);
     signal Eatual, Eprox: t_estado;
 begin
 
@@ -115,8 +115,11 @@ begin
         errado             when  Eatual=comparacao and igual = '0' else
         errado             when  Eatual=errado and iniciar='0' else
         preparacao         when  Eatual=errado and iniciar = '1' else
-        proxRodada         when  Eatual=ultRodada and fimCerto='0' else
-        iniRodada          when  Eatual=proxRodada else                                       
+        proxRodada         when  Eatual=jogadaAleatoria else
+        iniRodada          when  Eatual=proxRodada else
+        jogadaAleatoria    when  Eatual=contaMaisUm else
+        contaMaisUm        when  Eatual=ultRodada and fimCerto ='0' else
+              
         inicial;
 
     -- logica de saída (maquina de Moore)
@@ -157,7 +160,7 @@ begin
 
                       
     with Eatual select
-        contaE  <=     '1' when proximo,
+        contaE  <=     '1' when proximo | contaMaisUm,
                       '0'  when others;
 
     with Eatual select
@@ -191,6 +194,10 @@ begin
     with Eatual select           
         db_timeOut <= '1' when erroTimeOut,
                       '0' when others;
+
+    with Eatual select
+        escreve <= '1' when jogadaAleatoria,
+                   '0' when others;
 
     
 

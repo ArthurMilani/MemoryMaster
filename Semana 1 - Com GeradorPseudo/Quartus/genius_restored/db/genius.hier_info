@@ -441,6 +441,8 @@ mostraJogada => leds.OUTPUTSELECT
 mostraJogada => leds.OUTPUTSELECT
 mostraJogada => leds.OUTPUTSELECT
 mostrouJogada <= mostrouJogada.DB_MAX_OUTPUT_PORT_TYPE
+escreve => ram_16x4:memoria.we
+clock => bitvector_generator:geradorAleatorio.clk
 clock => contador_163:contadorEndereco.clock
 clock => contador_163:contadorRodada.clock
 clock => registrador_n:registraChaves.clock
@@ -500,6 +502,17 @@ db_rodada[0] <= contador_163:contadorRodada.Q[0]
 db_rodada[1] <= contador_163:contadorRodada.Q[1]
 db_rodada[2] <= contador_163:contadorRodada.Q[2]
 db_rodada[3] <= contador_163:contadorRodada.Q[3]
+
+
+|genius|fluxo_dados:dataFlux|bitvector_generator:geradorAleatorio
+clk => s_index[0].CLK
+clk => s_index[1].CLK
+rst => s_index[0].ACLR
+rst => s_index[1].ACLR
+output[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |genius|fluxo_dados:dataFlux|contador_163:contadorEndereco
@@ -867,18 +880,18 @@ fimTimer => Eprox.IN1
 fimRodada => Eprox.IN0
 fimRodada => Eprox.IN0
 zeraE <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
-contaE <= contaE.DB_MAX_OUTPUT_PORT_TYPE
+contaE <= WideNor1.DB_MAX_OUTPUT_PORT_TYPE
 zeraCR <= zeraCR.DB_MAX_OUTPUT_PORT_TYPE
 contaCR <= contaCR.DB_MAX_OUTPUT_PORT_TYPE
 zeraR <= zeraR.DB_MAX_OUTPUT_PORT_TYPE
 registraR <= registraR.DB_MAX_OUTPUT_PORT_TYPE
 ganhou <= ganhou.DB_MAX_OUTPUT_PORT_TYPE
-perdeu <= WideNor2.DB_MAX_OUTPUT_PORT_TYPE
-pronto <= WideNor1.DB_MAX_OUTPUT_PORT_TYPE
-contaT <= WideNor3.DB_MAX_OUTPUT_PORT_TYPE
-escreve <= comb.DB_MAX_OUTPUT_PORT_TYPE
+perdeu <= WideNor3.DB_MAX_OUTPUT_PORT_TYPE
+pronto <= WideNor2.DB_MAX_OUTPUT_PORT_TYPE
+contaT <= WideNor4.DB_MAX_OUTPUT_PORT_TYPE
+escreve <= escreve.DB_MAX_OUTPUT_PORT_TYPE
 db_timeout <= db_timeout.DB_MAX_OUTPUT_PORT_TYPE
-zeraContador <= WideNor3.DB_MAX_OUTPUT_PORT_TYPE
+zeraContador <= WideNor4.DB_MAX_OUTPUT_PORT_TYPE
 db_estado[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 db_estado[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 db_estado[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
