@@ -1,0 +1,101 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Arthur/Desktop/ModelSim
+Ecircuito_jogo_tb_acerto
+Z0 w1680127454
+Z1 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 23
+Z5 dC:/Users/Arthur/Desktop/Contador Decre
+Z6 8C:/Users/Arthur/Desktop/Contador Decre/tbDecre.vhdl
+Z7 FC:/Users/Arthur/Desktop/Contador Decre/tbDecre.vhdl
+l0
+L25 1
+VcI?Z1>KQ2h]5_C7:DOjL`0
+!s100 g`NJoEcMmB]kU>Df9nok]3
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1680127466
+!i10b 1
+Z10 !s108 1680127466.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/Contador Decre/tbDecre.vhdl|
+Z12 !s107 C:/Users/Arthur/Desktop/Contador Decre/tbDecre.vhdl|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Atb
+R1
+R2
+R3
+R4
+Z15 DEx4 work 23 circuito_jogo_tb_acerto 0 22 cI?Z1>KQ2h]5_C7:DOjL`0
+!i122 23
+l61
+Z16 L28 97
+V?aIFVf0nkGl>k3`i3f[I?2
+!s100 4A2VEl70?`A3[<d1DHd;E1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Econtador_m_decre
+Z17 w1680126111
+R1
+R2
+R3
+R4
+!i122 22
+R5
+Z18 8C:/Users/Arthur/Desktop/Contador Decre/contador_m_decre.vhdl
+Z19 FC:/Users/Arthur/Desktop/Contador Decre/contador_m_decre.vhdl
+l0
+L33 1
+Vb7OKliX^PEQD;[R1Sa@gT2
+!s100 4gW@7AT0aU>@RdFY2X4k22
+R8
+32
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/Contador Decre/contador_m_decre.vhdl|
+Z21 !s107 C:/Users/Arthur/Desktop/Contador Decre/contador_m_decre.vhdl|
+!i113 1
+R13
+R14
+Acomportamental
+R1
+R2
+R3
+R4
+DEx4 work 16 contador_m_decre 0 22 b7OKliX^PEQD;[R1Sa@gT2
+!i122 22
+l53
+L49 45
+VYad?U?O?m?^JYCzH55CM>3
+!s100 ?F[>Q0H1d4D=:NX]==nmJ3
+R8
+32
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14

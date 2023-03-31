@@ -1,0 +1,20 @@
+# Compile of circuito_jogo_tb_acerto.vhdl was successful.
+# Compile of comparador_85.vhdl was successful.
+# Compile of contador_163.vhdl was successful.
+# Compile of contador_m.vhdl was successful.
+# Compile of contador_m_compar.vhdl was successful.
+# Compile of contador_m_decre.vhdl was successful.
+# Compile of edge_detector.vhdl was successful.
+# Compile of fluxo_dados.vhdl failed with 3 errors.
+# Compile of genius.vhdl failed with 6 errors.
+# Compile of hexa7seg.vhdl was successful.
+# Compile of hexa7seg_modif.vhdl was successful.
+# Compile of ram_16x4.vhdl was successful.
+# Compile of registrador_n.vhdl was successful.
+# Compile of unidade_controle.vhdl was successful.
+# 14 compiles, 2 failed with 9 errors.
+# Compile of genius.vhdl failed with 6 errors.
+# Compile of genius.vhdl failed with 6 errors.
+# Compile of genius.vhdl was successful.
+# Compile of fluxo_dados.vhdl was successful.
+# Compile of genius.vhdl was successful.

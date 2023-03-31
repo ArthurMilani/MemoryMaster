@@ -1,0 +1,751 @@
+Analysis & Synthesis report for genius
+Fri Mar 31 10:37:25 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |genius|unidade_controle:unityControl|Eatual
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|registrador_n:registraChaves
+ 13. Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m:timer
+ 14. Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m:timerTransiorio
+ 15. Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m_decre:timerDecrescente
+ 16. Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m_compar:timerInfinito
+ 17. Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m:timerLeds
+ 18. Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|registrador_n:registraModoDeJogo
+ 19. Port Connectivity Checks: "unidade_controle:unityControl"
+ 20. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m:timerLeds"
+ 21. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m_compar:timerInfinito"
+ 22. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m_decre:timerDecrescente"
+ 23. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m:timerTransiorio"
+ 24. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m:timer"
+ 25. Port Connectivity Checks: "fluxo_dados:dataFlux|ram_16x4:memoria"
+ 26. Port Connectivity Checks: "fluxo_dados:dataFlux|comparador_85:ComparadorEndereco"
+ 27. Port Connectivity Checks: "fluxo_dados:dataFlux|comparador_85:ComparadorJogada"
+ 28. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorVida2"
+ 29. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorVida1"
+ 30. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorRodada"
+ 31. Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorEndereco"
+ 32. Port Connectivity Checks: "fluxo_dados:dataFlux"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Mar 31 10:37:25 2023       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; genius                                      ;
+; Top-level Entity Name           ; genius                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 221                                         ;
+; Total pins                      ; 60                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; genius             ; genius             ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                              ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; hexa7seg_modif.vhdl              ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/hexa7seg_modif.vhdl    ;         ;
+; contador_m_decre.vhdl            ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_decre.vhdl  ;         ;
+; contador_m_compar.vhdl           ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_compar.vhdl ;         ;
+; unidade_controle.vhdl            ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/unidade_controle.vhdl  ;         ;
+; registrador_n.vhdl               ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/registrador_n.vhdl     ;         ;
+; ram_16x4.vhdl                    ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/ram_16x4.vhdl          ;         ;
+; genius.vhdl                      ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl            ;         ;
+; fluxo_dados.vhdl                 ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl       ;         ;
+; edge_detector.vhdl               ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/edge_detector.vhdl     ;         ;
+; contador_m.vhdl                  ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m.vhdl        ;         ;
+; contador_163.vhdl                ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_163.vhdl      ;         ;
+; comparador_85.vhdl               ; yes             ; User VHDL File  ; C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/comparador_85.vhdl     ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 351         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 535         ;
+;     -- 7 input functions                    ; 1           ;
+;     -- 6 input functions                    ; 159         ;
+;     -- 5 input functions                    ; 103         ;
+;     -- 4 input functions                    ; 74          ;
+;     -- <=3 input functions                  ; 198         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 221         ;
+;                                             ;             ;
+; I/O pins                                    ; 60          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 222         ;
+; Total fan-out                               ; 3007        ;
+; Average fan-out                             ; 3.43        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name       ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------------+--------------+
+; |genius                                   ; 535 (67)            ; 221 (0)                   ; 0                 ; 0          ; 60   ; 0            ; |genius                                                        ; genius            ; work         ;
+;    |fluxo_dados:dataFlux|                 ; 241 (8)             ; 179 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux                                   ; fluxo_dados       ; work         ;
+;       |comparador_85:ComparadorEndereco|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|comparador_85:ComparadorEndereco  ; comparador_85     ; work         ;
+;       |comparador_85:ComparadorJogada|    ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|comparador_85:ComparadorJogada    ; comparador_85     ; work         ;
+;       |contador_163:contadorEndereco|     ; 8 (8)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_163:contadorEndereco     ; contador_163      ; work         ;
+;       |contador_163:contadorRodada|       ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_163:contadorRodada       ; contador_163      ; work         ;
+;       |contador_163:contadorVida1|        ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_163:contadorVida1        ; contador_163      ; work         ;
+;       |contador_163:contadorVida2|        ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_163:contadorVida2        ; contador_163      ; work         ;
+;       |contador_m:timerLeds|              ; 13 (13)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_m:timerLeds              ; contador_m        ; work         ;
+;       |contador_m:timerTransiorio|        ; 15 (15)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_m:timerTransiorio        ; contador_m        ; work         ;
+;       |contador_m:timer|                  ; 17 (17)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_m:timer                  ; contador_m        ; work         ;
+;       |contador_m_compar:timerInfinito|   ; 77 (77)             ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_m_compar:timerInfinito   ; contador_m_compar ; work         ;
+;       |contador_m_decre:timerDecrescente| ; 30 (30)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|contador_m_decre:timerDecrescente ; contador_m_decre  ; work         ;
+;       |edge_detector:edgeDetector|        ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|edge_detector:edgeDetector        ; edge_detector     ; work         ;
+;       |ram_16x4:memoria|                  ; 52 (52)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|ram_16x4:memoria                  ; ram_16x4          ; work         ;
+;       |registrador_n:registraChaves|      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|registrador_n:registraChaves      ; registrador_n     ; work         ;
+;       |registrador_n:registraModoDeJogo|  ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|fluxo_dados:dataFlux|registrador_n:registraModoDeJogo  ; registrador_n     ; work         ;
+;    |hexa7seg_modif:hexa7seg_display1|     ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|hexa7seg_modif:hexa7seg_display1                       ; hexa7seg_modif    ; work         ;
+;    |hexa7seg_modif:hexa7seg_display2|     ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|hexa7seg_modif:hexa7seg_display2                       ; hexa7seg_modif    ; work         ;
+;    |hexa7seg_modif:hexa7seg_display3|     ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|hexa7seg_modif:hexa7seg_display3                       ; hexa7seg_modif    ; work         ;
+;    |hexa7seg_modif:hexa7seg_display4|     ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|hexa7seg_modif:hexa7seg_display4                       ; hexa7seg_modif    ; work         ;
+;    |hexa7seg_modif:hexa7seg_display5|     ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|hexa7seg_modif:hexa7seg_display5                       ; hexa7seg_modif    ; work         ;
+;    |hexa7seg_modif:hexa7seg_display6|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |genius|hexa7seg_modif:hexa7seg_display6                       ; hexa7seg_modif    ; work         ;
+;    |unidade_controle:unityControl|        ; 158 (158)           ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |genius|unidade_controle:unityControl                          ; unidade_controle  ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |genius|unidade_controle:unityControl|Eatual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
++------------------------------------+--------------------------+---------------------------+-------------------------+--------------------+---------------+--------------+----------------+-------------------+-----------------+---------------------------+---------------------------------+------------------------------+--------------------------+------------------------------+--------------------------+--------------------------+----------------+------------------+-------------------+------------------+-------------------+------------------------------------+---------------------------+----------------------+----------------------+------------------------+------------------------+--------------------+-------------------------------+------------------------------+-----------------------+--------------------------------+------------------------+-----------------------+---------------------+------------------------+----------------------+-------------------------+---------------------+----------------------------+-----------------------+------------------------+---------------------------+----------------------------+---------------------+----------------+
+; Name                               ; Eatual.escreveNovaJogada ; Eatual.registraNovaJogada ; Eatual.esperaNovaJogada ; Eatual.erroTimeOut ; Eatual.errado ; Eatual.certo ; Eatual.proximo ; Eatual.comparacao ; Eatual.registra ; Eatual.mostraGanhouEstado ; Eatual.mostraJogadorAtualEstado ; Eatual.mostraVidaUser2Estado ; Eatual.mostraUser2Estado ; Eatual.mostraVidaUser1Estado ; Eatual.mostraUser1Estado ; Eatual.mostraNIvelEstado ; Eatual.jogadas ; Eatual.ultRodada ; Eatual.proxRodada ; Eatual.iniRodada ; Eatual.preparacao ; Eatual.esperaNovaJogadaMultiTDecre ; Eatual.jogadasMultiTDecre ; Eatual.jogador2Ganha ; Eatual.jogador1Ganha ; Eatual.decrementaVida2 ; Eatual.decrementaVida1 ; Eatual.ambosGanham ; Eatual.escreveNovaJogadaMulti ; Eatual.esperaNovaJogadaMulti ; Eatual.mostraGanhador ; Eatual.registraNovaJogadaMulti ; Eatual.proxRodadaMulti ; Eatual.ultRodadaMulti ; Eatual.proximoMulti ; Eatual.comparacaoMulti ; Eatual.registraMulti ; Eatual.erroTimeOutMulti ; Eatual.jogadasMulti ; Eatual.mostraPlacarJogador ; Eatual.iniRodadaMulti ; Eatual.resetaContadorE ; Eatual.mostraJogadaEstado ; Eatual.registraNivelEstado ; Eatual.seletorNivel ; Eatual.inicial ;
++------------------------------------+--------------------------+---------------------------+-------------------------+--------------------+---------------+--------------+----------------+-------------------+-----------------+---------------------------+---------------------------------+------------------------------+--------------------------+------------------------------+--------------------------+--------------------------+----------------+------------------+-------------------+------------------+-------------------+------------------------------------+---------------------------+----------------------+----------------------+------------------------+------------------------+--------------------+-------------------------------+------------------------------+-----------------------+--------------------------------+------------------------+-----------------------+---------------------+------------------------+----------------------+-------------------------+---------------------+----------------------------+-----------------------+------------------------+---------------------------+----------------------------+---------------------+----------------+
+; Eatual.inicial                     ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 0              ;
+; Eatual.seletorNivel                ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 1                   ; 1              ;
+; Eatual.registraNivelEstado         ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 1                          ; 0                   ; 1              ;
+; Eatual.mostraJogadaEstado          ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 1                         ; 0                          ; 0                   ; 1              ;
+; Eatual.resetaContadorE             ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 1                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.iniRodadaMulti              ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 1                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraPlacarJogador         ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 1                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.jogadasMulti                ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 1                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.erroTimeOutMulti            ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 1                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.registraMulti               ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 1                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.comparacaoMulti             ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 1                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.proximoMulti                ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 1                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.ultRodadaMulti              ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 1                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.proxRodadaMulti             ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 1                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.registraNovaJogadaMulti     ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 1                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraGanhador              ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 1                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.esperaNovaJogadaMulti       ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 1                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.escreveNovaJogadaMulti      ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 1                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.ambosGanham                 ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 1                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.decrementaVida1             ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 1                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.decrementaVida2             ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 1                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.jogador1Ganha               ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 1                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.jogador2Ganha               ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 1                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.jogadasMultiTDecre          ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 1                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.esperaNovaJogadaMultiTDecre ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 1                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.preparacao                  ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 1                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.iniRodada                   ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 1                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.proxRodada                  ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 1                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.ultRodada                   ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 1                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.jogadas                     ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 1              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraNIvelEstado           ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 1                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraUser1Estado           ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 1                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraVidaUser1Estado       ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 1                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraUser2Estado           ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 1                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraVidaUser2Estado       ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 1                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraJogadorAtualEstado    ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 1                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.mostraGanhouEstado          ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 1                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.registra                    ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 1               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.comparacao                  ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 1                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.proximo                     ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 1              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.certo                       ; 0                        ; 0                         ; 0                       ; 0                  ; 0             ; 1            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.errado                      ; 0                        ; 0                         ; 0                       ; 0                  ; 1             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.erroTimeOut                 ; 0                        ; 0                         ; 0                       ; 1                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.esperaNovaJogada            ; 0                        ; 0                         ; 1                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.registraNovaJogada          ; 0                        ; 1                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
+; Eatual.escreveNovaJogada           ; 1                        ; 0                         ; 0                       ; 0                  ; 0             ; 0            ; 0              ; 0                 ; 0               ; 0                         ; 0                               ; 0                            ; 0                        ; 0                            ; 0                        ; 0                        ; 0              ; 0                ; 0                 ; 0                ; 0                 ; 0                                  ; 0                         ; 0                    ; 0                    ; 0                      ; 0                      ; 0                  ; 0                             ; 0                            ; 0                     ; 0                              ; 0                      ; 0                     ; 0                   ; 0                      ; 0                    ; 0                       ; 0                   ; 0                          ; 0                     ; 0                      ; 0                         ; 0                          ; 0                   ; 1              ;
++------------------------------------+--------------------------+---------------------------+-------------------------+--------------------+---------------+--------------+----------------+-------------------+-----------------+---------------------------+---------------------------------+------------------------------+--------------------------+------------------------------+--------------------------+--------------------------+----------------+------------------+-------------------+------------------+-------------------+------------------------------------+---------------------------+----------------------+----------------------+------------------------+------------------------+--------------------+-------------------------------+------------------------------+-----------------------+--------------------------------+------------------------+-----------------------+---------------------+------------------------+----------------------+-------------------------+---------------------+----------------------------+-----------------------+------------------------+---------------------------+----------------------------+---------------------+----------------+
+
+
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++---------------------------------------------------------+--------------------+
+; Register name                                           ; Reason for Removal ;
++---------------------------------------------------------+--------------------+
+; unidade_controle:unityControl|Eatual.mostraGanhador     ; Lost fanout        ;
+; unidade_controle:unityControl|Eatual.registraNovaJogada ; Lost fanout        ;
+; unidade_controle:unityControl|Eatual.escreveNovaJogada  ; Lost fanout        ;
+; unidade_controle:unityControl|Eatual.esperaNovaJogada   ; Lost fanout        ;
+; Total Number of Removed Registers = 4                   ;                    ;
++---------------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 221   ;
+; Number of registers using Synchronous Clear  ; 76    ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 52    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 130   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; 3:1                ; 13 bits   ; 26 LEs        ; 0 LEs                ; 26 LEs                 ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m:timer|IQ[7]                   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m_decre:timerDecrescente|IQ[11] ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m:timerTransiorio|IQ[0]         ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m:timerLeds|IQ[0]               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_163:contadorEndereco|IQ[0]      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_163:contadorRodada|IQ[1]        ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_163:contadorVida2|IQ[3]         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_163:contadorVida1|IQ[3]         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m_decre:timerDecrescente|IQ[5]  ;
+; 4:1                ; 21 bits   ; 42 LEs        ; 0 LEs                ; 42 LEs                 ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m_compar:timerInfinito|IQ2[12]  ;
+; 4:1                ; 21 bits   ; 42 LEs        ; 0 LEs                ; 42 LEs                 ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m_compar:timerInfinito|IQ1[6]   ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m_decre:timerDecrescente|IQ[9]  ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |genius|fluxo_dados:dataFlux|contador_m_decre:timerDecrescente|IQ[2]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |genius|s_display1                                                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |genius|fluxo_dados:dataFlux|leds[3]                                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |genius|s_display4[4]                                                 ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |genius|s_display1[3]                                                 ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |genius|s_display4[3]                                                 ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |genius|s_display2[0]                                                 ;
+; 10:1               ; 5 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |genius|s_display3[0]                                                 ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |genius|s_display6[1]                                                 ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |genius|s_display6[2]                                                 ;
+; 87:1               ; 2 bits    ; 116 LEs       ; 116 LEs              ; 0 LEs                  ; No         ; |genius|unidade_controle:unityControl|Eprox.inicial                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|registrador_n:registraChaves ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m:timer ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; m              ; 5000  ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m:timerTransiorio ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; m              ; 1500  ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m_decre:timerDecrescente ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; m              ; 6000  ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m_compar:timerInfinito ;
++----------------+---------+------------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                                   ;
++----------------+---------+------------------------------------------------------------------------+
+; m              ; 2000000 ; Signed Integer                                                         ;
++----------------+---------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|contador_m:timerLeds ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; m              ; 1000  ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fluxo_dados:dataFlux|registrador_n:registraModoDeJogo ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; n              ; 4     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "unidade_controle:unityControl"                                                           ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; vencedor1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; vencedor2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_estado ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m:timerLeds"                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m_compar:timerInfinito"                                  ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fim     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; meio    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m_decre:timerDecrescente"                                ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; meio    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m:timerTransiorio"                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; meio    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_m:timer"                                                 ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; zera_as ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; meio    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|ram_16x4:memoria" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; ce   ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|comparador_85:ComparadorEndereco"                                ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; i_agtb ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_altb ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_aeqb ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_agtb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_altb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|comparador_85:ComparadorJogada"                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; i_agtb ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_altb ; Input  ; Info     ; Stuck at GND                                                                        ;
+; i_aeqb ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; o_agtb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; o_altb ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorVida2"                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ld   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ent  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; d    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rco  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorVida1"                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ld   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; ent  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; d    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rco  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorRodada" ;
++------+-------+----------+----------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                            ;
++------+-------+----------+----------------------------------------------------+
+; ld   ; Input ; Info     ; Stuck at VCC                                       ;
+; ent  ; Input ; Info     ; Stuck at VCC                                       ;
+; d    ; Input ; Info     ; Stuck at GND                                       ;
++------+-------+----------+----------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux|contador_163:contadorEndereco" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; ld   ; Input ; Info     ; Stuck at VCC                                         ;
+; ent  ; Input ; Info     ; Stuck at VCC                                         ;
+; d    ; Input ; Info     ; Stuck at GND                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fluxo_dados:dataFlux"                                                                      ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; fimcr       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_contagem ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_memoria  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_jogada   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; db_rodada   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 221                         ;
+;     CLR               ; 43                          ;
+;     CLR SLD           ; 1                           ;
+;     ENA               ; 80                          ;
+;     ENA CLR           ; 8                           ;
+;     ENA SCLR          ; 42                          ;
+;     SCLR              ; 34                          ;
+;     plain             ; 13                          ;
+; arriav_lcell_comb     ; 539                         ;
+;     arith             ; 89                          ;
+;         1 data inputs ; 89                          ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 449                         ;
+;         1 data inputs ; 20                          ;
+;         2 data inputs ; 46                          ;
+;         3 data inputs ; 47                          ;
+;         4 data inputs ; 74                          ;
+;         5 data inputs ; 103                         ;
+;         6 data inputs ; 159                         ;
+; boundary_port         ; 60                          ;
+;                       ;                             ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.61                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Fri Mar 31 10:37:10 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off genius -c genius
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file hexa7seg_modif.vhdl
+    Info (12022): Found design unit 1: hexa7seg_modif-comportamental File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/hexa7seg_modif.vhdl Line: 31
+    Info (12023): Found entity 1: hexa7seg_modif File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/hexa7seg_modif.vhdl Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file contador_m_decre.vhdl
+    Info (12022): Found design unit 1: contador_m_decre-comportamental File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_decre.vhdl Line: 49
+    Info (12023): Found entity 1: contador_m_decre File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_decre.vhdl Line: 33
+Info (12021): Found 2 design units, including 1 entities, in source file contador_m_compar.vhdl
+    Info (12022): Found design unit 1: contador_m_compar-comportamental File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_compar.vhdl Line: 50
+    Info (12023): Found entity 1: contador_m_compar File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_compar.vhdl Line: 33
+Info (12021): Found 2 design units, including 1 entities, in source file unidade_controle.vhdl
+    Info (12022): Found design unit 1: unidade_controle-fsm File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/unidade_controle.vhdl Line: 99
+    Info (12023): Found entity 1: unidade_controle File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/unidade_controle.vhdl Line: 22
+Info (12021): Found 2 design units, including 1 entities, in source file registrador_n.vhdl
+    Info (12022): Found design unit 1: registrador_n-comportamental File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/registrador_n.vhdl Line: 49
+    Info (12023): Found entity 1: registrador_n File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/registrador_n.vhdl Line: 36
+Info (12021): Found 3 design units, including 1 entities, in source file ram_16x4.vhdl
+    Info (12022): Found design unit 1: ram_16x4-ram_mif File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/ram_16x4.vhdl Line: 40
+    Info (12022): Found design unit 2: ram_16x4-ram_modelsim File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/ram_16x4.vhdl Line: 70
+    Info (12023): Found entity 1: ram_16x4 File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/ram_16x4.vhdl Line: 28
+Info (12021): Found 2 design units, including 1 entities, in source file hexa7seg.vhdl
+    Info (12022): Found design unit 1: hexa7seg-comportamental File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/hexa7seg.vhdl Line: 31
+    Info (12023): Found entity 1: hexa7seg File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/hexa7seg.vhdl Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file genius.vhdl
+    Info (12022): Found design unit 1: genius-estrutural File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 45
+    Info (12023): Found entity 1: genius File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhdl
+    Info (12022): Found design unit 1: fluxo_dados-estrutural File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 101
+    Info (12023): Found entity 1: fluxo_dados File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 33
+Info (12021): Found 2 design units, including 1 entities, in source file edge_detector.vhdl
+    Info (12022): Found design unit 1: edge_detector-rtl File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/edge_detector.vhdl Line: 34
+    Info (12023): Found entity 1: edge_detector File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/edge_detector.vhdl Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file contador_m.vhdl
+    Info (12022): Found design unit 1: contador_m-comportamental File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m.vhdl Line: 48
+    Info (12023): Found entity 1: contador_m File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m.vhdl Line: 33
+Info (12021): Found 2 design units, including 1 entities, in source file contador_163.vhdl
+    Info (12022): Found design unit 1: contador_163-comportamental File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_163.vhdl Line: 32
+    Info (12023): Found entity 1: contador_163 File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_163.vhdl Line: 19
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_85.vhdl
+    Info (12022): Found design unit 1: comparador_85-dataflow File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/comparador_85.vhdl Line: 37
+    Info (12023): Found entity 1: comparador_85 File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/comparador_85.vhdl Line: 18
+Info (12127): Elaborating entity "genius" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at genius.vhdl(204): object "s_contagem" assigned a value but never read File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 204
+Warning (10036): Verilog HDL or VHDL warning at genius.vhdl(205): object "s_memoria" assigned a value but never read File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 205
+Warning (10036): Verilog HDL or VHDL warning at genius.vhdl(206): object "s_chaves" assigned a value but never read File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 206
+Warning (10036): Verilog HDL or VHDL warning at genius.vhdl(207): object "s_estado" assigned a value but never read File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 207
+Warning (10036): Verilog HDL or VHDL warning at genius.vhdl(208): object "s_rodada" assigned a value but never read File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 208
+Warning (10036): Verilog HDL or VHDL warning at genius.vhdl(221): object "s_vencedor1" assigned a value but never read File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 221
+Warning (10036): Verilog HDL or VHDL warning at genius.vhdl(222): object "s_vencedor2" assigned a value but never read File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 222
+Info (12128): Elaborating entity "hexa7seg_modif" for hierarchy "hexa7seg_modif:hexa7seg_display6" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 286
+Info (12128): Elaborating entity "fluxo_dados" for hierarchy "fluxo_dados:dataFlux" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 394
+Info (12128): Elaborating entity "contador_163" for hierarchy "fluxo_dados:dataFlux|contador_163:contadorEndereco" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 249
+Info (12128): Elaborating entity "comparador_85" for hierarchy "fluxo_dados:dataFlux|comparador_85:ComparadorJogada" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 297
+Info (12128): Elaborating entity "registrador_n" for hierarchy "fluxo_dados:dataFlux|registrador_n:registraChaves" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 333
+Info (12129): Elaborating entity "ram_16x4" using architecture "A:ram_mif" for hierarchy "fluxo_dados:dataFlux|ram_16x4:memoria" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 342
+Info (12128): Elaborating entity "edge_detector" for hierarchy "fluxo_dados:dataFlux|edge_detector:edgeDetector" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 353
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:dataFlux|contador_m:timer" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 361
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:dataFlux|contador_m:timerTransiorio" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 373
+Info (12128): Elaborating entity "contador_m_decre" for hierarchy "fluxo_dados:dataFlux|contador_m_decre:timerDecrescente" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 385
+Warning (10492): VHDL Process Statement warning at contador_m_decre.vhdl(59): signal "tempoInicial" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_decre.vhdl Line: 59
+Info (12128): Elaborating entity "contador_m_compar" for hierarchy "fluxo_dados:dataFlux|contador_m_compar:timerInfinito" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 398
+Warning (10492): VHDL Process Statement warning at contador_m_compar.vhdl(57): signal "jogadorAtual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_compar.vhdl Line: 57
+Warning (10492): VHDL Process Statement warning at contador_m_compar.vhdl(68): signal "jogadorAtual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/contador_m_compar.vhdl Line: 68
+Info (12128): Elaborating entity "contador_m" for hierarchy "fluxo_dados:dataFlux|contador_m:timerLeds" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/fluxo_dados.vhdl Line: 412
+Info (12128): Elaborating entity "unidade_controle" for hierarchy "unidade_controle:unityControl" File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/genius.vhdl Line: 460
+Warning (10541): VHDL Signal Declaration warning at unidade_controle.vhdl(44): used implicit default value for signal "vencedor1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/unidade_controle.vhdl Line: 44
+Warning (10541): VHDL Signal Declaration warning at unidade_controle.vhdl(45): used implicit default value for signal "vencedor2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/unidade_controle.vhdl Line: 45
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276007): RAM logic "fluxo_dados:dataFlux|ram_16x4:memoria|memoria" is uninferred due to asynchronous read logic File: C:/Users/Operador/Desktop/MemoryMaster-main/MemoryMaster-main/Semana 4 -ComDISPLAY/genius_restored/ram_16x4.vhdl Line: 42
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 653 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 53 output pins
+    Info (21061): Implemented 593 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4845 megabytes
+    Info: Processing ended: Fri Mar 31 10:37:25 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:31
+
+
