@@ -1,0 +1,669 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/user/Documents/GitHub/MemoryMaster/Semana 4/Contador comparador
+Ebitvector_generator
+Z0 w1680224157
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 27
+Z4 dC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim
+Z5 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/generator.vhdl
+Z6 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/generator.vhdl
+l0
+L5 1
+VEl9f^:fazWzgJRgA[mOC12
+!s100 S`5HGViZG]d7_n6oUS9H10
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1680295976
+!i10b 1
+Z9 !s108 1680295976.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/generator.vhdl|
+Z11 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/generator.vhdl|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 19 bitvector_generator 0 22 El9f^:fazWzgJRgA[mOC12
+!i122 27
+l17
+L13 17
+VX8?Hml;K;:j?bGnWh1=e01
+!s100 f;JXc`1b]=kzOLb]Pnf:K2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecircuito_jogo_tb_acerto
+Z14 w1680291754
+R2
+R3
+!i122 19
+R4
+Z15 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/circuito_jogo_tb_acerto.vhdl
+Z16 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/circuito_jogo_tb_acerto.vhdl
+l0
+L23 1
+Vj`D7UGc_i^dfLfYN`nb1a1
+!s100 BjcX:]cJFC2bnWzUj9]?@3
+R7
+32
+Z17 !s110 1680295975
+!i10b 1
+Z18 !s108 1680295974.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/circuito_jogo_tb_acerto.vhdl|
+Z20 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/circuito_jogo_tb_acerto.vhdl|
+!i113 1
+R12
+R13
+Atb
+R2
+R3
+DEx4 work 23 circuito_jogo_tb_acerto 0 22 j`D7UGc_i^dfLfYN`nb1a1
+!i122 19
+l80
+L26 1129
+VhPReRJWd>CEkYj9ccO78k3
+!s100 F;YGJZAm:b[e?RVzmIPlO1
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Ecomparador_85
+Z21 w1680291753
+R2
+R3
+!i122 20
+R4
+Z22 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/comparador_85.vhdl
+Z23 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/comparador_85.vhdl
+l0
+L18 1
+VnRX1cKGSWahUOZjWkD0Vo3
+!s100 UchionOWWKZd[S9Df?mH>0
+R7
+32
+R17
+!i10b 1
+Z24 !s108 1680295975.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/comparador_85.vhdl|
+Z26 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/comparador_85.vhdl|
+!i113 1
+R12
+R13
+Adataflow
+R2
+R3
+DEx4 work 13 comparador_85 0 22 nRX1cKGSWahUOZjWkD0Vo3
+!i122 20
+l41
+L37 20
+V1]eQ[UffKzW]]?63mLgma0
+!s100 P^;hPi]5OVVdjL6GdC0U80
+R7
+32
+R17
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R12
+R13
+Econtador_163
+R21
+R1
+R2
+R3
+!i122 21
+R4
+Z27 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_163.vhdl
+Z28 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_163.vhdl
+l0
+Z29 L19 1
+VWj>hDW5JaQnFBm8n4zHQK1
+!s100 HncTPI9f>PSaSM@8d2b100
+R7
+32
+R17
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_163.vhdl|
+Z31 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_163.vhdl|
+!i113 1
+R12
+R13
+Acomportamental
+R1
+R2
+R3
+DEx4 work 12 contador_163 0 22 Wj>hDW5JaQnFBm8n4zHQK1
+!i122 21
+l34
+L32 29
+Vb^X@5ndgX5UJ@jUXZMM1M1
+!s100 :UBU?:`V1RR45eY[;lMH80
+R7
+32
+R17
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R12
+R13
+Econtador_m
+R21
+Z32 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R1
+R2
+R3
+!i122 22
+R4
+Z33 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m.vhdl
+Z34 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m.vhdl
+l0
+Z35 L33 1
+VANNXIA=RIQ<Q7Vodg8I4[3
+!s100 O9oUMBV6aEHd<PJmNY6Hb0
+R7
+32
+R17
+!i10b 1
+R24
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m.vhdl|
+Z37 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m.vhdl|
+!i113 1
+R12
+R13
+Acomportamental
+R32
+R1
+R2
+R3
+DEx4 work 10 contador_m 0 22 ANNXIA=RIQ<Q7Vodg8I4[3
+!i122 22
+l50
+L48 30
+V88`SO<TkLIhJ]kcNIj4FZ2
+!s100 CZ3=HML=Oc`R5F34:ARK50
+R7
+32
+R17
+!i10b 1
+R24
+R36
+R37
+!i113 1
+R12
+R13
+Econtador_m_compar
+R21
+R32
+R1
+R2
+R3
+!i122 23
+R4
+Z38 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_compar.vhdl
+Z39 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_compar.vhdl
+l0
+R35
+VI@fE=1:h]bE`<1]fSzKfQ2
+!s100 7mlVCTe]`z9zm:B6IE_Ze3
+R7
+32
+R17
+!i10b 1
+R24
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_compar.vhdl|
+Z41 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_compar.vhdl|
+!i113 1
+R12
+R13
+Acomportamental
+R32
+R1
+R2
+R3
+DEx4 work 17 contador_m_compar 0 22 I@fE=1:h]bE`<1]fSzKfQ2
+!i122 23
+l53
+L50 48
+VC1AK7gV:m;Xo>ch9I:>OA1
+!s100 3X7;83E59MzaFY0TiP@lT2
+R7
+32
+R17
+!i10b 1
+R24
+R40
+R41
+!i113 1
+R12
+R13
+Econtador_m_decre
+R21
+R32
+R1
+R2
+R3
+!i122 24
+R4
+Z42 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_decre.vhdl
+Z43 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_decre.vhdl
+l0
+R35
+Vb7OKliX^PEQD;[R1Sa@gT2
+!s100 4gW@7AT0aU>@RdFY2X4k22
+R7
+32
+R17
+!i10b 1
+R24
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_decre.vhdl|
+Z45 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/contador_m_decre.vhdl|
+!i113 1
+R12
+R13
+Acomportamental
+R32
+R1
+R2
+R3
+DEx4 work 16 contador_m_decre 0 22 b7OKliX^PEQD;[R1Sa@gT2
+!i122 24
+l53
+L49 45
+VYad?U?O?m?^JYCzH55CM>3
+!s100 ?F[>Q0H1d4D=:NX]==nmJ3
+R7
+32
+R17
+!i10b 1
+R24
+R44
+R45
+!i113 1
+R12
+R13
+Eedge_detector
+R21
+R2
+R3
+!i122 25
+R4
+Z46 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/edge_detector.vhdl
+Z47 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/edge_detector.vhdl
+l0
+L25 1
+V5C=KRLAGRaYL1?AQ;E;9j1
+!s100 8YZ2^jBlaX4?0]W6fg5fQ2
+R7
+32
+R17
+!i10b 1
+R24
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/edge_detector.vhdl|
+Z49 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/edge_detector.vhdl|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 13 edge_detector 0 22 5C=KRLAGRaYL1?AQ;E;9j1
+!i122 25
+l39
+L34 21
+V[;JQ17iE0iTkHY<AjIT;13
+!s100 XhDFK>6^Pg;Cf>3KW;kN03
+R7
+32
+R17
+!i10b 1
+R24
+R48
+R49
+!i113 1
+R12
+R13
+Efluxo_dados
+Z50 w1680295888
+R32
+R1
+R2
+R3
+!i122 26
+R4
+Z51 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/fluxo_dados.vhdl
+Z52 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/fluxo_dados.vhdl
+l0
+R35
+V7DM_SZA9WaVfFO87TomAM3
+!s100 <ma92naUkM9h[J1oO=>zB2
+R7
+32
+R17
+!i10b 1
+R24
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/fluxo_dados.vhdl|
+Z54 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/fluxo_dados.vhdl|
+!i113 1
+R12
+R13
+Aestrutural
+Z55 DEx4 work 8 ram_16x4 0 22 g`PTnemeRgQL_3ISd6Mch0
+R32
+R1
+R2
+R3
+DEx4 work 11 fluxo_dados 0 22 7DM_SZA9WaVfFO87TomAM3
+!i122 26
+l245
+L102 377
+V9cZDf7XUT>HzHJ?TXI7aC1
+!s100 BE<W>TE[Qmmj6F:nd[NJD3
+R7
+32
+R17
+!i10b 1
+R24
+R53
+R54
+!i113 1
+R12
+R13
+Egenius
+Z56 w1680295045
+R2
+R3
+!i122 28
+R4
+Z57 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/genius.vhdl
+Z58 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/genius.vhdl
+l0
+R29
+V26^Y9Qk^aSRDM;PR9:LOi0
+!s100 97dZdlC5PPzYk`;[nJ33L2
+R7
+32
+R8
+!i10b 1
+R9
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/genius.vhdl|
+Z60 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/genius.vhdl|
+!i113 1
+R12
+R13
+Aestrutural
+R2
+R3
+DEx4 work 6 genius 0 22 26^Y9Qk^aSRDM;PR9:LOi0
+!i122 28
+l270
+L46 498
+VKANf<=0n0c8?T?8jDR;EP0
+!s100 gYK6caVJNJkcKJdncSFTT0
+R7
+32
+R8
+!i10b 1
+R9
+R59
+R60
+!i113 1
+R12
+R13
+Ehexa7seg
+R21
+R2
+R3
+!i122 29
+R4
+Z61 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg.vhdl
+Z62 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg.vhdl
+l0
+Z63 L24 1
+VNzLIg6K]CUPT@eNgm@^Y33
+!s100 m70:2LbOnf0ODWJKbc?@F3
+R7
+32
+R8
+!i10b 1
+R9
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg.vhdl|
+Z65 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg.vhdl|
+!i113 1
+R12
+R13
+Acomportamental
+R2
+R3
+DEx4 work 8 hexa7seg 0 22 NzLIg6K]CUPT@eNgm@^Y33
+!i122 29
+l32
+L31 22
+V=D7[V5QbM@nI0L<=AT5On1
+!s100 U7QTX5YA5zSmB21GTflT=3
+R7
+32
+R8
+!i10b 1
+R9
+R64
+R65
+!i113 1
+R12
+R13
+Ehexa7seg_modif
+R21
+R2
+R3
+!i122 30
+R4
+Z66 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg_modif.vhdl
+Z67 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg_modif.vhdl
+l0
+R63
+VT5EICI[=hgNdMMHcY=dU81
+!s100 @CDQEbb>EKMaP<4<RRaBf3
+R7
+32
+R8
+!i10b 1
+R9
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg_modif.vhdl|
+Z69 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/hexa7seg_modif.vhdl|
+!i113 1
+R12
+R13
+Acomportamental
+R2
+R3
+DEx4 work 14 hexa7seg_modif 0 22 T5EICI[=hgNdMMHcY=dU81
+!i122 30
+l32
+L31 34
+V>emKZ9iVid`]8=<ZAg_YC0
+!s100 6OSWI0HQkdcW<0z41Mf0M2
+R7
+32
+R8
+!i10b 1
+R9
+R68
+R69
+!i113 1
+R12
+R13
+Eram_16x4
+R21
+R1
+R2
+R3
+!i122 31
+R4
+Z70 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/ram_16x4.vhdl
+Z71 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/ram_16x4.vhdl
+l0
+L28 1
+Vg`PTnemeRgQL_3ISd6Mch0
+!s100 7_Oke2`[UPj15mR6JKQR]2
+R7
+32
+R8
+!i10b 1
+R9
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/ram_16x4.vhdl|
+Z73 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/ram_16x4.vhdl|
+!i113 1
+R12
+R13
+Aram_modelsim
+R1
+R2
+R3
+R55
+!i122 31
+l90
+L70 40
+VW<X<c?LzFVB3KHZa6`TZ33
+!s100 @Wb^3GhPLl>oU<nW@hX`C0
+R7
+32
+R8
+!i10b 1
+R9
+R72
+R73
+!i113 1
+R12
+R13
+Aram_mif
+R1
+R2
+R3
+R55
+!i122 31
+l48
+L40 28
+VL@:WRViVbhzaNJhb?YVj_0
+!s100 li^dkRXUzaR[dDlo<aFOa3
+R7
+32
+R8
+!i10b 1
+R9
+R72
+R73
+!i113 1
+R12
+R13
+Eregistrador_n
+R21
+R2
+R3
+!i122 32
+R4
+Z74 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/registrador_n.vhdl
+Z75 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/registrador_n.vhdl
+l0
+L36 1
+VHlbKf2VcahFg_gWc@:B[V0
+!s100 3bzKIeXZ[JC5lI:U7Z[362
+R7
+32
+R8
+!i10b 1
+R9
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/registrador_n.vhdl|
+Z77 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/registrador_n.vhdl|
+!i113 1
+R12
+R13
+Acomportamental
+R2
+R3
+DEx4 work 13 registrador_n 0 22 HlbKf2VcahFg_gWc@:B[V0
+!i122 32
+l51
+L49 16
+VCGVk>k6hO1hRHPj58^@:e1
+!s100 NJEJoUNzGSKQfC6FYC6Cz3
+R7
+32
+R8
+!i10b 1
+R9
+R76
+R77
+!i113 1
+R12
+R13
+Eunidade_controle
+Z78 w1680294915
+R2
+R3
+!i122 33
+R4
+Z79 8C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/unidade_controle.vhdl
+Z80 FC:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/unidade_controle.vhdl
+l0
+L22 1
+VQZ>m`FC:;`XcoRAPM61YK2
+!s100 8S;UACJYheA?bT:V^1gQ>3
+R7
+32
+R8
+!i10b 1
+R9
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/unidade_controle.vhdl|
+!s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/unidade_controle.vhdl|
+!i113 1
+R12
+R13
+Afsm
+R2
+R3
+DEx4 work 16 unidade_controle 0 22 QZ>m`FC:;`XcoRAPM61YK2
+!i122 33
+l120
+L100 320
+VSV@Y4Q3LAS^l8GTRh1BEQ3
+!s100 e482O<B_?1oPS;1<]dOF31
+R7
+32
+R8
+!i10b 1
+R9
+R81
+Z82 !s107 C:/Users/Arthur/Desktop/MemoryMaster/Semana 4 -ComDISPLAY (Pos-lab)/ModelSim/unidade_controle.vhdl|
+!i113 1
+R12
+R13
